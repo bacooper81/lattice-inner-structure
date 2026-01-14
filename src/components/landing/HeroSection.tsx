@@ -15,10 +15,10 @@ const HeroSection = () => {
           className="w-full h-full object-cover object-center"
         />
         {/* Soft dreamy edge fade */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_30%,_rgba(255,255,255,0.4)_60%,_rgba(255,255,255,0.85)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-background" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 via-30% to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-transparent to-white/50" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-30% to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-white/70" />
       </div>
 
       {/* Radial fade behind text */}
