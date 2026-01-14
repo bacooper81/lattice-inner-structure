@@ -20,14 +20,14 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 text-slate-700">
+        <p className="lattice-logo text-lg md:text-xl mb-8 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-rose-400 bg-clip-text text-transparent">
           Lattice
         </p>
 
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-slate-800">
-          Build Your
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
+          <span className="bg-gradient-to-br from-slate-800 via-violet-900 to-slate-800 bg-clip-text text-transparent">Build Your</span>
           <br />
-          <span className="text-slate-900">Inner Lattice</span>
+          <span className="bg-gradient-to-r from-violet-700 via-fuchsia-600 to-rose-500 bg-clip-text text-transparent">Inner Lattice</span>
         </h1>
 
         <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -36,10 +36,10 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="xl">
+          <Button size="xl" className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-rose-400 text-white hover:opacity-90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
-          <Button variant="outline" size="xl" className="border-slate-400 text-slate-700 hover:bg-slate-100/50 font-serif tracking-widest uppercase text-xs">
+          <Button variant="outline" size="xl" className="border-violet-300 text-violet-700 hover:bg-violet-50/50 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
