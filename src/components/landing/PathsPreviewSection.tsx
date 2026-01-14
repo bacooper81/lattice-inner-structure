@@ -1,0 +1,89 @@
+import { motion } from "framer-motion";
+
+const paths = [
+  {
+    title: "Path of Grounding",
+    description: "Move from scattered to solid. Build steadiness into your days.",
+    sessions: 6,
+  },
+  {
+    title: "Path of Intuition",
+    description: "Learn to trust the quiet knowing that guides from within.",
+    sessions: 5,
+  },
+  {
+    title: "Path of Inner Healing",
+    description: "Release old patterns and make space for renewal.",
+    sessions: 7,
+  },
+];
+
+const PathsPreviewSection = () => {
+  return (
+    <section className="lattice-section">
+      <div className="lattice-container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <p className="text-accent font-serif tracking-widest uppercase text-sm mb-4">
+            Explore
+          </p>
+          <h2 className="lattice-heading mb-6">
+            Choose Your Path
+          </h2>
+          <p className="lattice-body max-w-2xl mx-auto">
+            Each path is a complete journey—a narrative arc that guides you through transformation, one session at a time.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {paths.map((path, index) => (
+            <motion.div
+              key={path.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group cursor-pointer"
+            >
+              <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
+                {/* Decorative lattice pattern */}
+                <div className="h-32 bg-lattice-gradient rounded-xl mb-6 relative overflow-hidden">
+                  <div className="absolute inset-0 opacity-20">
+                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-accent" />
+                      </pattern>
+                      <rect width="100" height="100" fill={`url(#lattice-${index})`} />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
+                      <span className="font-serif text-lg font-semibold text-accent">{path.sessions}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 className="font-serif text-xl font-semibold text-primary mb-3">
+                  {path.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed flex-1">
+                  {path.description}
+                </p>
+                <p className="text-xs text-muted-foreground/70 mt-4 uppercase tracking-wider">
+                  {path.sessions} Sessions
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PathsPreviewSection;
