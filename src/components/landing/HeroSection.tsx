@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Strong top edge fade - on top of everything */}
-      <div className="absolute top-0 left-0 right-0 h-32 z-30 bg-gradient-to-b from-background/90 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-48 z-30 bg-gradient-to-b from-background to-transparent" />
       
       {/* Background image with overlay */}
       <div className="absolute -top-[60%] left-0 right-0 h-[150%]">
