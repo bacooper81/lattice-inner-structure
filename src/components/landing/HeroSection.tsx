@@ -5,9 +5,6 @@ import heroImage from "@/assets/hero-crystal-lattice.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Strong top edge fade - on top of everything */}
-      <div className="absolute top-0 left-0 right-0 h-48 z-30 bg-gradient-to-b from-background to-transparent" />
-      
       {/* Background image with overlay */}
       <div className="absolute -top-[60%] left-0 right-0 h-[150%]">
         <img
@@ -17,7 +14,7 @@ const HeroSection = () => {
         />
         {/* Soft dreamy edge fade */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-background" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-30% to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-white/70" />
       </div>
