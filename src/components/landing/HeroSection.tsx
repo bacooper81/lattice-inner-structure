@@ -10,7 +10,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top scale-125 origin-top"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/30 to-background" />
       </div>
