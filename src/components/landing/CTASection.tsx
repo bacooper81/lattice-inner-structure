@@ -24,11 +24,11 @@ const CTASection = () => {
         >
           <p className="lattice-logo text-lg mb-6 opacity-80">Lattice</p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6">
-            Each Practice Builds Your Inner Lattice
+            Your Inner Lattice Is Waiting to Be Built
           </h2>
           <p className="text-lg opacity-80 mb-10 leading-relaxed">
-            Start with a single session. Return for a path. Watch as something strong
-            and beautiful takes shape within you.
+            The first session is free. Start the Path of Grounding and feel the difference
+            structure makes.
           </p>
           <Button variant="crystal" size="xl">
             Start Your First Session

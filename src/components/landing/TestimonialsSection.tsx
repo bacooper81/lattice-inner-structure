@@ -5,19 +5,19 @@ const testimonials = [
   {
     name: "Sarah M.",
     role: "Yoga Instructor",
-    content: "Lattice has transformed my meditation practice. The crystal imagery creates such a deep connection—I feel more grounded after just one session than I did after years of traditional meditation.",
+    content: "I've tried every meditation app. This is the first one where I feel like I'm actually building something. After finishing the Grounding path, I noticed I was different—not just during meditation, but all day.",
     rating: 5,
   },
   {
     name: "James K.",
     role: "Software Engineer",
-    content: "As a skeptic, I was surprised by how powerful the visualizations are. The Path of Grounding helped me manage my anxiety in ways I never expected. The structure keeps me coming back.",
+    content: "I'm not into crystals, but the visualizations are incredible. Standing in that circular temple, dropping the hematite sphere—I still think about it. The metaphors actually teach you something.",
     rating: 5,
   },
   {
     name: "Elena R.",
     role: "Therapist",
-    content: "I recommend Lattice to my clients regularly. The narrative arc of each path creates real, lasting transformation. It's meditation with purpose and direction.",
+    content: "Most apps help you relax. Lattice helps you grow. The path structure keeps clients engaged in a way random sessions never did. It's meditation that goes somewhere.",
     rating: 5,
   },
 ];
