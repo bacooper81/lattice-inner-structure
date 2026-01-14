@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image with overlay */}
-      <div className="absolute -top-[30%] left-0 right-0 h-[130%]">
+      <div className="absolute -top-[45%] left-0 right-0 h-[150%]">
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
