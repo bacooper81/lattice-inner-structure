@@ -16,50 +16,30 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-20">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="lattice-logo text-lg md:text-xl mb-8 text-white/90"
-        >
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+        <p className="lattice-logo text-lg md:text-xl mb-8 text-white/90">
           Lattice
-        </motion.p>
+        </p>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-white"
-        >
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-white">
           Build Your
           <br />
           <span className="text-rose-300">Inner Lattice</span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
-        >
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
-        </motion.p>
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="hero" size="xl">
             Begin Your Journey
           </Button>
           <Button variant="subtle" size="xl">
             Explore Paths
           </Button>
-        </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
