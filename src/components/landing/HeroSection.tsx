@@ -17,17 +17,17 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 text-foreground/80">
+        <p className="lattice-logo text-lg md:text-xl mb-8 text-slate-700">
           Lattice
         </p>
 
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-foreground">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-slate-800">
           Build Your
           <br />
-          <span className="text-primary">Inner Lattice</span>
+          <span className="text-slate-900">Inner Lattice</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
         </p>
@@ -36,7 +36,7 @@ const HeroSection = () => {
           <Button variant="hero" size="xl">
             Begin Your Journey
           </Button>
-          <Button variant="subtle" size="xl">
+          <Button variant="outline" size="xl" className="border-slate-400 text-slate-700 hover:bg-slate-100/50 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
