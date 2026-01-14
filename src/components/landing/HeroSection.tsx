@@ -26,26 +26,26 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 text-[#8b7b9e]">
+        <p className="lattice-logo text-lg md:text-xl mb-8 text-[#7a6889]">
           Lattice
         </p>
 
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
-          <span className="text-[#5d4e6d]">Build Your</span>
+          <span className="text-[#4a3d5c]">Build Your</span>
           <br />
-          <span className="text-[#9b7a8a]">Inner Lattice</span>
+          <span className="text-[#8a6070]">Inner Lattice</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-[#7a6b8a] max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-[#5f5278] max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="xl" className="bg-[#6b5a7a] text-white hover:bg-[#5d4e6d] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
+          <Button size="xl" className="bg-[#5a4968] text-white hover:bg-[#4a3d5c] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
-          <Button variant="outline" size="xl" className="border-[#b8a9c9] text-[#6b5a7a] hover:bg-[#e8dff0]/50 font-serif tracking-widest uppercase text-xs">
+          <Button variant="outline" size="xl" className="border-[#a090b8] text-[#5a4968] hover:bg-[#e0d4eb]/50 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
