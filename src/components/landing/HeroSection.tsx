@@ -5,8 +5,8 @@ import heroImage from "@/assets/hero-crystal-lattice.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Top fade - 150px fade at visible top of section */}
-      <div className="absolute top-0 left-0 right-0 h-[150px] z-30 bg-gradient-to-b from-background/90 to-transparent" />
+      {/* Top fade - 100px strong fade at visible top of section */}
+      <div className="absolute top-0 left-0 right-0 h-[100px] z-30 bg-gradient-to-b from-background via-background/90 to-transparent" />
       {/* Background image with overlay */}
       <div className="absolute -top-[60%] left-0 right-0 h-[150%]">
         <img
