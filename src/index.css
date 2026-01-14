@@ -26,12 +26,12 @@
     --secondary: 35 15% 90%;
     --secondary-foreground: 220 15% 25%;
 
-    /* Muted - Soft taupe */
+    /* Muted - Soft taupe - darkened for better contrast */
     --muted: 30 10% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted-foreground: 220 15% 35%;
 
-    /* Accent - Warm amber/gold for crystal energy */
-    --accent: 38 50% 65%;
+    /* Accent - Warm amber/gold for crystal energy - richer */
+    --accent: 38 55% 50%;
     --accent-foreground: 220 20% 15%;
 
     /* Crystalline highlight */
@@ -62,9 +62,10 @@
     /* Custom Lattice tokens */
     --lattice-cream: 40 30% 97%;
     --lattice-warm: 35 25% 94%;
-    --lattice-gold: 38 50% 65%;
-    --lattice-gold-light: 40 40% 85%;
+    --lattice-gold: 38 55% 50%;
+    --lattice-gold-light: 40 45% 75%;
     --lattice-slate: 220 15% 25%;
+    --lattice-slate-light: 220 15% 35%;
     --lattice-slate-light: 220 10% 45%;
     --lattice-stone: 30 15% 80%;
   }
