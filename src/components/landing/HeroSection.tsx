@@ -41,36 +41,13 @@ const HeroSection = () => {
           they construct something lasting within.
         </p>
 
-        <div className="relative">
-          {/* Subtle crystal pattern */}
-          <div className="absolute inset-0 -inset-x-12 -bottom-8 -top-4 opacity-[0.08] pointer-events-none">
-            <svg viewBox="0 0 400 150" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <linearGradient id="crystalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#8b7b9e" />
-                  <stop offset="100%" stopColor="#9b7a8a" />
-                </linearGradient>
-              </defs>
-              {/* Crystal shapes */}
-              <polygon points="50,70 70,40 90,70 70,100" fill="url(#crystalGrad1)" />
-              <polygon points="120,80 150,50 180,80 150,110" fill="url(#crystalGrad1)" />
-              <polygon points="200,60 220,30 240,60 220,90" fill="url(#crystalGrad1)" />
-              <polygon points="280,75 310,45 340,75 310,105" fill="url(#crystalGrad1)" />
-              <polygon points="85,95 105,75 125,95 105,115" fill="url(#crystalGrad1)" />
-              <polygon points="235,90 255,70 275,90 255,110" fill="url(#crystalGrad1)" />
-              <polygon points="320,55 340,35 360,55 340,75" fill="url(#crystalGrad1)" />
-              <polygon points="30,50 45,30 60,50 45,70" fill="url(#crystalGrad1)" />
-            </svg>
-          </div>
-          
-          <div className="relative flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="xl" className="bg-[#6b5a7a] text-white hover:bg-[#5d4e6d] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
-              Begin Your Journey
-            </Button>
-            <Button variant="outline" size="xl" className="border-[#b8a9c9] text-[#6b5a7a] hover:bg-[#e8dff0]/50 font-serif tracking-widest uppercase text-xs">
-              Explore Paths
-            </Button>
-          </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="xl" className="bg-[#6b5a7a] text-white hover:bg-[#5d4e6d] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
+            Begin Your Journey
+          </Button>
+          <Button variant="outline" size="xl" className="border-[#b8a9c9] text-[#6b5a7a] hover:bg-[#e8dff0]/50 font-serif tracking-widest uppercase text-xs">
+            Explore Paths
+          </Button>
         </div>
       </div>
 
