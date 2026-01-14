@@ -45,7 +45,7 @@ const HeroSection = () => {
           <Button size="xl" className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
-          <Button variant="outline" size="xl" className="border-[#a090b8] text-[#5a4968] hover:bg-[#e0d4eb]/50 font-serif tracking-widest uppercase text-xs">
+          <Button variant="outline" size="xl" className="border-[#a090b8] text-[#6d5a7d] hover:bg-[#e0d4eb]/50 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
