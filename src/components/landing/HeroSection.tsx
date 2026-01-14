@@ -30,7 +30,7 @@ const HeroSection = () => {
           Lattice
         </p>
 
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light leading-tight mb-6">
           <span className="text-[#4a3d5c]">Build Your</span>
           <br />
           <span className="text-[#9e6878]">Inner Lattice</span>
