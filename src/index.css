@@ -8,27 +8,27 @@
   :root {
     /* Soft warm white background */
     --background: 40 20% 98%;
-    --foreground: 240 10% 20%;
+    --foreground: 270 7% 25%;
 
     /* Cards with subtle warmth */
     --card: 40 15% 99%;
-    --card-foreground: 240 10% 20%;
+    --card-foreground: 270 7% 25%;
 
     /* Popover matching card */
     --popover: 40 15% 99%;
-    --popover-foreground: 240 10% 20%;
+    --popover-foreground: 270 7% 25%;
 
     /* Primary - Deep charcoal slate */
-    --primary: 240 10% 20%;
+    --primary: 270 7% 25%;
     --primary-foreground: 40 20% 98%;
 
     /* Secondary - Soft warm gray */
     --secondary: 40 10% 94%;
-    --secondary-foreground: 240 10% 20%;
+    --secondary-foreground: 270 7% 25%;
 
     /* Muted - Warm gray for readable secondary text */
     --muted: 40 8% 94%;
-    --muted-foreground: 240 8% 40%;
+    --muted-foreground: 270 7% 45%;
 
     /* Accent - Soft dusty purple from hero */
     --accent: 280 20% 50%;
@@ -36,7 +36,7 @@
 
     /* Crystalline highlight - soft rose from hero */
     --crystal: 350 30% 55%;
-    --crystal-foreground: 240 10% 20%;
+    --crystal-foreground: 270 7% 25%;
 
     /* Destructive */
     --destructive: 0 65% 55%;
@@ -55,7 +55,7 @@
     --sidebar-primary: 240 10% 20%;
     --sidebar-primary-foreground: 40 20% 98%;
     --sidebar-accent: 40 12% 92%;
-    --sidebar-accent-foreground: 240 10% 20%;
+    --sidebar-accent-foreground: 270 7% 25%;
     --sidebar-border: 40 12% 90%;
     --sidebar-ring: 280 20% 50%;
 
