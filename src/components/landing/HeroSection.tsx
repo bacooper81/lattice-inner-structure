@@ -12,22 +12,22 @@ const HeroSection = () => {
           alt="Crystal lattice meditation"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-800/70 via-slate-700/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/30 to-background" />
       </div>
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 text-white/90">
+        <p className="lattice-logo text-lg md:text-xl mb-8 text-foreground/80">
           Lattice
         </p>
 
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-white">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-foreground">
           Build Your
           <br />
-          <span className="text-cyan-300">Inner Lattice</span>
+          <span className="text-primary">Inner Lattice</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
         </p>
