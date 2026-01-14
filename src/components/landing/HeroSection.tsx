@@ -12,16 +12,16 @@ const HeroSection = () => {
           alt="Crystal lattice meditation"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-background" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-20">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="lattice-logo text-lg md:text-xl mb-8 text-foreground drop-shadow-sm"
+          className="lattice-logo text-lg md:text-xl mb-8 text-white/90"
         >
           Lattice
         </motion.p>
@@ -30,18 +30,18 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-foreground drop-shadow-sm"
+          className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-white"
         >
           Build Your
           <br />
-          <span className="text-amber-700">Inner Lattice</span>
+          <span className="text-rose-300">Inner Lattice</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-sm"
+          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
