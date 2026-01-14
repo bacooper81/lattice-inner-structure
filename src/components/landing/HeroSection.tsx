@@ -32,9 +32,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-primary leading-tight mb-6"
         >
-          Guided Crystal
+          Build Your
           <br />
-          <span className="text-accent">Meditation Journeys</span>
+          <span className="text-accent">Inner Lattice</span>
         </motion.h1>
 
         <motion.p
@@ -43,8 +43,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Multi-day paths that guide you through vivid crystal visualizations, 
-          building real inner strength—one session at a time.
+          A guided crystal meditation app with structured paths that don't just calm you—
+          they construct something lasting within.
         </motion.p>
 
         <motion.div
