@@ -10,7 +10,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
-          className="w-full h-[calc(100%+6rem)] object-cover object-[center_25%] scale-100"
+          className="w-full h-[calc(100%+6rem)] object-cover object-[center_5%] scale-100"
         />
         {/* Soft dreamy edge fade */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
