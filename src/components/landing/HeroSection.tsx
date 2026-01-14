@@ -35,7 +35,7 @@ const HeroSection = () => {
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
           <span className="text-[#5d4e6d]">Build Your</span>
           <br />
-          <span className="text-[#c4956a]">Inner Lattice</span>
+          <span className="text-[rgb(155,122,138)]">Inner Lattice</span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#6b5a7a] max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -44,7 +44,7 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="xl" className="bg-[#d4a574] text-white hover:bg-[#c4956a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
+          <Button size="xl" className="bg-[rgb(155,122,138)] text-white hover:bg-[rgb(135,102,118)] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
           <Button variant="outline" size="xl" className="border-[#8a7a9e] text-[#6b5a7a] hover:bg-[#8a7a9e]/10 font-serif tracking-widest uppercase text-xs">
