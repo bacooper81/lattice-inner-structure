@@ -31,7 +31,7 @@ const HeroSection = () => {
         </p>
 
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
-          A Guided <span className="text-[#7a6889]">Crystal Meditation Journey</span>
+          A Guided <span className="text-[rgb(158,104,120)]">Crystal Meditation Journey</span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#5f5278] max-w-2xl mx-auto mb-10 leading-relaxed">
