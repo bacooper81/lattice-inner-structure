@@ -12,7 +12,11 @@ const HeroSection = () => {
           alt="Crystal lattice meditation"
           className="w-full h-[calc(100%+12rem)] object-cover object-center scale-125"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/30 to-background" />
+        {/* Soft dreamy edge fade */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_50%_40%,_transparent_30%,_rgba(255,255,255,0.6)_60%,_rgba(255,255,255,0.95)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-white/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-white/60" />
       </div>
 
       {/* Radial fade behind text */}
