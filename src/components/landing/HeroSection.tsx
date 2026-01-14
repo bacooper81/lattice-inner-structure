@@ -6,17 +6,17 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image with overlay */}
-      <div className="absolute -top-48 left-0 right-0 bottom-0">
+      <div className="absolute -top-24 left-0 right-0 bottom-0">
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
-          className="w-full h-[calc(100%+12rem)] object-cover object-center scale-125"
+          className="w-full h-[calc(100%+6rem)] object-cover object-center scale-100"
         />
         {/* Soft dreamy edge fade */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_50%_40%,_transparent_30%,_rgba(255,255,255,0.6)_60%,_rgba(255,255,255,0.95)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-background" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-white/50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-white/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-background" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-white/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-white/70" />
       </div>
 
       {/* Radial fade behind text */}
