@@ -6,11 +6,11 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image with overlay */}
-      <div className="absolute -top-[30vh] left-0 right-0 bottom-0">
+      <div className="absolute -top-[40%] left-0 right-0 bottom-0">
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
-          className="w-full h-[calc(100%+30vh)] object-cover object-center"
+          className="w-full h-[140%] object-cover object-center"
         />
         {/* Soft dreamy edge fade */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
