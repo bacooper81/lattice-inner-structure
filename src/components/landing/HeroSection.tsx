@@ -42,7 +42,7 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="xl" className="bg-white text-[#6b5a7a] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
+          <Button size="xl" className="bg-[#f0d4b8] text-[#5a4a3a] hover:bg-[#e8c9a8] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
           <Button variant="outline" size="xl" className="border-white/60 text-white hover:bg-white/20 font-serif tracking-widest uppercase text-xs">
