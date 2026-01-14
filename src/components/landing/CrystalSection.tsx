@@ -3,7 +3,7 @@ import crystalsImage from "@/assets/crystals-arrangement.jpg";
 
 const CrystalSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm overflow-hidden">
+    <section className="lattice-section bg-background overflow-hidden">
       <div className="lattice-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -14,13 +14,13 @@ const CrystalSection = () => {
             transition={{ duration: 0.8 }}
             className="order-2 lg:order-1"
           >
-            <p className="text-accent font-serif tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
               Crystal Energy
             </p>
-            <h2 className="lattice-heading mb-6">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
               Crystals Are Always Optional
             </h2>
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-[#5f5278] leading-relaxed">
               <p>
                 Each meditation is paired with a crystal whose energy aligns perfectly with the session's theme.
                 But here's the beautiful part: you don't need the physical stone.
@@ -40,7 +40,7 @@ const CrystalSection = () => {
               {["Smoky Quartz", "Black Tourmaline", "Hematite", "Blue Agate", "Amethyst"].map((crystal) => (
                 <span
                   key={crystal}
-                  className="px-4 py-2 rounded-full bg-background text-sm text-muted-foreground border border-border"
+                  className="px-4 py-2 rounded-full bg-[#f5f0f8] text-sm text-[#6d5a7d] border border-[#e8dff0]"
                 >
                   {crystal}
                 </span>
@@ -63,8 +63,8 @@ const CrystalSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Glow effect */}
-            <div className="absolute inset-0 rounded-3xl shadow-crystal opacity-50 pointer-events-none" />
+            {/* Subtle glow effect */}
+            <div className="absolute inset-0 rounded-3xl shadow-[0_0_60px_-20px_rgba(158,104,120,0.3)] pointer-events-none" />
           </motion.div>
         </div>
       </div>

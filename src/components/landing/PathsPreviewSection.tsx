@@ -20,7 +20,7 @@ const paths = [
 
 const PathsPreviewSection = () => {
   return (
-    <section className="lattice-section">
+    <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,13 +29,14 @@ const PathsPreviewSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-accent font-serif tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
             Explore
           </p>
-          <h2 className="lattice-heading mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Choose Your Path
           </h2>
-          <p className="lattice-body max-w-2xl mx-auto">
+          <div className="lattice-divider mx-auto mb-6" />
+          <p className="text-[#5f5278] text-lg max-w-2xl mx-auto leading-relaxed">
             Each path is a complete journey—a narrative arc that guides you through transformation, one session at a time.
           </p>
         </motion.div>
@@ -52,29 +53,29 @@ const PathsPreviewSection = () => {
             >
               <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
                 {/* Decorative lattice pattern */}
-                <div className="h-32 bg-lattice-gradient rounded-xl mb-6 relative overflow-hidden">
+                <div className="h-32 bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4] rounded-xl mb-6 relative overflow-hidden">
                   <div className="absolute inset-0 opacity-20">
                     <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                       <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                        <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-accent" />
+                        <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-[#9e6878]" />
                       </pattern>
                       <rect width="100" height="100" fill={`url(#lattice-${index})`} />
                     </svg>
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
-                      <span className="font-serif text-lg font-semibold text-accent">{path.sessions}</span>
+                    <div className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
+                      <span className="font-serif text-lg font-semibold text-[#9e6878]">{path.sessions}</span>
                     </div>
                   </div>
                 </div>
 
-                <h3 className="font-serif text-xl font-semibold text-primary mb-3">
+                <h3 className="font-serif text-xl font-semibold text-[#4a3d5c] mb-3">
                   {path.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed flex-1">
+                <p className="text-[#5f5278] leading-relaxed flex-1">
                   {path.description}
                 </p>
-                <p className="text-xs text-muted-foreground/70 mt-4 uppercase tracking-wider">
+                <p className="text-xs text-[#7a6889] mt-4 uppercase tracking-wider">
                   {path.sessions} Sessions
                 </p>
               </div>

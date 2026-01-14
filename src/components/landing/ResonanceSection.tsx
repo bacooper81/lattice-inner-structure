@@ -21,7 +21,7 @@ const ResonanceSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <p className="text-accent font-serif tracking-widest uppercase text-sm mb-8">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-8">
             A Different Kind of Practice
           </p>
 
@@ -30,11 +30,11 @@ const ResonanceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed mb-8"
+            className="font-serif text-2xl md:text-3xl lg:text-4xl text-[#4a3d5c] leading-relaxed mb-8"
           >
             You're not looking for another way to relax.
             <br />
-            <span className="text-accent">You're looking for something to build.</span>
+            <span className="text-[#9e6878]">You're looking for something to build.</span>
           </motion.p>
 
           <motion.div
@@ -50,7 +50,7 @@ const ResonanceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-[#5f5278] leading-relaxed max-w-2xl mx-auto"
           >
             A foundation. An architecture of stillness that holds weight. 
             Lattice guides you through paths that don't just calm—they construct 
