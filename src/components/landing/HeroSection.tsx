@@ -15,6 +15,9 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/30 to-background" />
       </div>
 
+      {/* Radial fade behind text */}
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.85)_0%,_rgba(255,255,255,0.4)_40%,_transparent_70%)]" />
+
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <p className="lattice-logo text-lg md:text-xl mb-8 text-slate-700">
