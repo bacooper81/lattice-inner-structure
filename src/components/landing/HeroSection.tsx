@@ -5,8 +5,8 @@ import heroImage from "@/assets/hero-crystal-lattice.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Top fade - 125px strong fade at visible top of section */}
-      <div className="absolute top-0 left-0 right-0 h-[125px] z-30 bg-gradient-to-b from-background via-background/75 to-transparent" />
+      {/* Top fade - pinkish violet to match image */}
+      <div className="absolute top-0 left-0 right-0 h-[125px] z-30 bg-gradient-to-b from-[#c9a8c5] via-[#c9a8c5]/75 to-transparent" />
       {/* Background image with overlay */}
       <div className="absolute -top-[60%] left-0 right-0 h-[150%]">
         <img
@@ -14,38 +14,38 @@ const HeroSection = () => {
           alt="Crystal lattice meditation"
           className="w-full h-full object-cover object-center"
         />
-        {/* Soft dreamy edge fade */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-background" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-30% to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-white/70" />
+        {/* Soft dreamy edge fade - pinkish violet */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(201,168,197,0.6)_55%,_rgba(201,168,197,0.95)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#c9a8c5]/80 via-transparent to-[#c9a8c5]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#c9a8c5] via-[#c9a8c5]/80 via-30% to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#c9a8c5]/70 via-transparent to-[#c9a8c5]/70" />
       </div>
 
-      {/* Radial fade behind text */}
-      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.85)_0%,_rgba(255,255,255,0.4)_40%,_transparent_70%)]" />
+      {/* Radial fade behind text - subtle for legibility */}
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_rgba(201,168,197,0.5)_0%,_rgba(201,168,197,0.2)_40%,_transparent_70%)]" />
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 text-[#8b7b9e]">
+        <p className="lattice-logo text-lg md:text-xl mb-8 text-white/90">
           Lattice
         </p>
 
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
-          <span className="text-[#5d4e6d]">Build Your</span>
+          <span className="text-white">Build Your</span>
           <br />
-          <span className="text-[#9b7a8a]">Inner Lattice</span>
+          <span className="text-white/90">Inner Lattice</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-[#7a6b8a] max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="xl" className="bg-[#6b5a7a] text-white hover:bg-[#5d4e6d] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
+          <Button size="xl" className="bg-white text-[#6b5a7a] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
-          <Button variant="outline" size="xl" className="border-[#b8a9c9] text-[#6b5a7a] hover:bg-[#e8dff0]/50 font-serif tracking-widest uppercase text-xs">
+          <Button variant="outline" size="xl" className="border-white/60 text-white hover:bg-white/20 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
