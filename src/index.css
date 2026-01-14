@@ -6,68 +6,67 @@
 
 @layer base {
   :root {
-    /* Warm cream background - the foundation */
-    --background: 40 30% 97%;
-    --foreground: 220 20% 20%;
+    /* Soft warm white background */
+    --background: 40 20% 98%;
+    --foreground: 240 10% 20%;
 
     /* Cards with subtle warmth */
-    --card: 40 25% 99%;
-    --card-foreground: 220 20% 20%;
+    --card: 40 15% 99%;
+    --card-foreground: 240 10% 20%;
 
     /* Popover matching card */
-    --popover: 40 25% 99%;
-    --popover-foreground: 220 20% 20%;
+    --popover: 40 15% 99%;
+    --popover-foreground: 240 10% 20%;
 
-    /* Primary - Deep slate charcoal - darker for contrast */
-    --primary: 220 20% 18%;
-    --primary-foreground: 40 30% 97%;
+    /* Primary - Deep charcoal slate */
+    --primary: 240 10% 20%;
+    --primary-foreground: 40 20% 98%;
 
-    /* Secondary - Warm stone */
-    --secondary: 35 15% 90%;
-    --secondary-foreground: 220 15% 25%;
+    /* Secondary - Soft warm gray */
+    --secondary: 40 10% 94%;
+    --secondary-foreground: 240 10% 20%;
 
-    /* Muted - Soft taupe - much darker for better contrast */
-    --muted: 30 10% 92%;
-    --muted-foreground: 220 20% 28%;
+    /* Muted - Warm gray for readable secondary text */
+    --muted: 40 8% 94%;
+    --muted-foreground: 240 8% 40%;
 
-    /* Accent - Warm amber/gold for crystal energy - rich and visible */
-    --accent: 28 75% 35%;
-    --accent-foreground: 40 30% 97%;
+    /* Accent - Champagne rose - crystalline, path-neutral */
+    --accent: 12 50% 50%;
+    --accent-foreground: 40 20% 98%;
 
-    /* Crystalline highlight */
-    --crystal: 38 45% 72%;
-    --crystal-foreground: 220 20% 15%;
+    /* Crystalline highlight - soft rose */
+    --crystal: 350 35% 60%;
+    --crystal-foreground: 240 10% 20%;
 
     /* Destructive */
     --destructive: 0 65% 55%;
-    --destructive-foreground: 40 30% 97%;
+    --destructive-foreground: 40 20% 98%;
 
     /* Borders & inputs */
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 38 50% 65%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 12 50% 50%;
 
     --radius: 0.75rem;
 
     /* Sidebar */
-    --sidebar-background: 40 25% 96%;
-    --sidebar-foreground: 220 20% 30%;
-    --sidebar-primary: 220 15% 25%;
-    --sidebar-primary-foreground: 40 30% 97%;
-    --sidebar-accent: 35 20% 90%;
-    --sidebar-accent-foreground: 220 15% 25%;
-    --sidebar-border: 35 15% 88%;
-    --sidebar-ring: 38 50% 65%;
+    --sidebar-background: 40 15% 97%;
+    --sidebar-foreground: 240 10% 25%;
+    --sidebar-primary: 240 10% 20%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 40 12% 92%;
+    --sidebar-accent-foreground: 240 10% 20%;
+    --sidebar-border: 40 12% 90%;
+    --sidebar-ring: 12 50% 50%;
 
     /* Custom Lattice tokens */
-    --lattice-cream: 40 30% 97%;
-    --lattice-warm: 35 25% 94%;
-    --lattice-gold: 38 55% 50%;
-    --lattice-gold-light: 40 45% 75%;
-    --lattice-slate: 220 15% 25%;
-    --lattice-slate-light: 220 15% 35%;
-    --lattice-slate-light: 220 10% 45%;
-    --lattice-stone: 30 15% 80%;
+    --lattice-cream: 40 20% 98%;
+    --lattice-warm: 40 15% 95%;
+    --lattice-rose: 12 50% 50%;
+    --lattice-rose-light: 12 40% 75%;
+    --lattice-slate: 240 10% 20%;
+    --lattice-slate-light: 240 8% 40%;
+    --lattice-stone: 40 10% 85%;
   }
 
   .dark {
