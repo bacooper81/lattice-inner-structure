@@ -30,12 +30,12 @@
     --muted: 40 8% 94%;
     --muted-foreground: 240 8% 40%;
 
-    /* Accent - Champagne rose - crystalline, path-neutral */
-    --accent: 12 50% 50%;
+    /* Accent - Soft dusty purple from hero */
+    --accent: 280 20% 50%;
     --accent-foreground: 40 20% 98%;
 
-    /* Crystalline highlight - soft rose */
-    --crystal: 350 35% 60%;
+    /* Crystalline highlight - soft rose from hero */
+    --crystal: 350 30% 55%;
     --crystal-foreground: 240 10% 20%;
 
     /* Destructive */
@@ -45,7 +45,7 @@
     /* Borders & inputs */
     --border: 40 15% 88%;
     --input: 40 15% 88%;
-    --ring: 12 50% 50%;
+    --ring: 280 20% 50%;
 
     --radius: 0.75rem;
 
@@ -57,15 +57,18 @@
     --sidebar-accent: 40 12% 92%;
     --sidebar-accent-foreground: 240 10% 20%;
     --sidebar-border: 40 12% 90%;
-    --sidebar-ring: 12 50% 50%;
+    --sidebar-ring: 280 20% 50%;
 
-    /* Custom Lattice tokens */
+    /* Custom Lattice tokens - hero color palette */
     --lattice-cream: 40 20% 98%;
     --lattice-warm: 40 15% 95%;
-    --lattice-rose: 12 50% 50%;
-    --lattice-rose-light: 12 40% 75%;
-    --lattice-slate: 240 10% 20%;
-    --lattice-slate-light: 240 8% 40%;
+    --lattice-deep: 273 20% 30%;
+    --lattice-rose: 350 30% 55%;
+    --lattice-rose-light: 350 25% 70%;
+    --lattice-purple: 280 18% 48%;
+    --lattice-purple-light: 280 15% 55%;
+    --lattice-slate: 270 15% 30%;
+    --lattice-slate-light: 270 12% 45%;
     --lattice-stone: 40 10% 85%;
   }
 

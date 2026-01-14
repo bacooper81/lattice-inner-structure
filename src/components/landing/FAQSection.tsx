@@ -35,8 +35,8 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="lattice-section bg-background">
+      <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,10 +44,14 @@ const FAQSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
+            FAQ
+          </p>
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Common Questions
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <div className="lattice-divider mx-auto mb-6" />
+          <p className="text-[#5f5278] text-lg max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about your journey with Lattice
           </p>
         </motion.div>
@@ -64,12 +68,12 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card/30 border border-border/50 rounded-xl px-6 data-[state=open]:bg-card/50 transition-colors"
+                className="bg-card border border-border/50 rounded-xl px-6 data-[state=open]:shadow-lattice transition-all"
               >
-                <AccordionTrigger className="text-left font-display text-foreground hover:text-crystal transition-colors py-5">
+                <AccordionTrigger className="text-left font-serif text-[#4a3d5c] hover:text-[#6d5a7d] transition-colors py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                <AccordionContent className="text-[#5f5278] leading-relaxed pb-5">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

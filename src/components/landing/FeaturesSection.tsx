@@ -43,7 +43,7 @@ const itemVariants = {
 
 const FeaturesSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm">
+    <section className="lattice-section bg-background">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,10 +52,10 @@ const FeaturesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-accent font-serif tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
             How Lattice Is Different
           </p>
-          <h2 className="lattice-heading mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Structure That Transforms
           </h2>
           <div className="lattice-divider mx-auto" />
@@ -74,13 +74,13 @@ const FeaturesSection = () => {
               variants={itemVariants}
               className="lattice-card text-center group hover:shadow-lattice-hover transition-shadow duration-300"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-lattice-gold-light/50 text-accent mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#f5f0f8] text-[#7a6889] mb-6 group-hover:scale-110 transition-transform duration-300">
                 <feature.icon className="w-7 h-7" strokeWidth={1.5} />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-primary mb-4">
+              <h3 className="font-serif text-xl font-semibold text-[#4a3d5c] mb-4">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-[#5f5278] leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

@@ -21,7 +21,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="lattice-section">
+    <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
@@ -32,7 +32,7 @@ const HowItWorksSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square rounded-3xl overflow-hidden shadow-crystal">
+            <div className="aspect-square rounded-3xl overflow-hidden shadow-lattice">
               <img
                 src={pathImage}
                 alt="Meditation path journey"
@@ -40,7 +40,7 @@ const HowItWorksSection = () => {
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-lattice-gold-light/30 rounded-2xl -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#f5f0f8]/50 rounded-2xl -z-10" />
             <div className="absolute -top-6 -left-6 w-16 h-16 bg-lattice-warm rounded-xl -z-10" />
           </motion.div>
 
@@ -51,10 +51,10 @@ const HowItWorksSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-accent font-serif tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
               The Journey
             </p>
-            <h2 className="lattice-heading mb-8">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">
               How Paths Work
             </h2>
 
@@ -68,14 +68,14 @@ const HowItWorksSection = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex gap-6"
                 >
-                  <span className="font-serif text-3xl font-semibold text-lattice-gold-light">
+                  <span className="font-serif text-3xl font-semibold text-[#9e6878]">
                     {step.number}
                   </span>
                   <div>
-                    <h3 className="font-serif text-xl font-semibold text-primary mb-2">
+                    <h3 className="font-serif text-xl font-semibold text-[#4a3d5c] mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-[#5f5278] leading-relaxed">
                       {step.description}
                     </p>
                   </div>
