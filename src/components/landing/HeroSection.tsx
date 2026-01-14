@@ -5,18 +5,18 @@ import heroImage from "@/assets/hero-crystal-lattice.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[hsl(270,30%,15%)] via-[hsl(280,25%,20%)] to-[hsl(260,30%,12%)]">
-      {/* Background image - right side, faded into background */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute right-0 top-0 w-full md:w-2/3 h-full">
+      {/* Background image - right side, smaller and seamlessly blended */}
+      <div className="absolute inset-0 overflow-hidden flex items-center justify-end">
+        <div className="relative w-[500px] h-[500px] lg:w-[550px] lg:h-[550px] mr-8 lg:mr-16">
           <img
             src={heroImage}
             alt=""
-            className="w-full h-full object-cover object-center -scale-x-100"
+            className="w-full h-full object-contain -scale-x-100"
+            style={{
+              maskImage: 'radial-gradient(ellipse 70% 70% at center, black 30%, transparent 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at center, black 30%, transparent 70%)',
+            }}
           />
-          {/* Fade overlays */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(270,30%,15%)] via-[hsl(270,30%,15%)/70%] to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(260,30%,12%)] via-transparent to-[hsl(270,30%,15%)/50%]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(270,30%,15%)/30%] via-transparent to-[hsl(260,30%,12%)]" />
         </div>
       </div>
 
