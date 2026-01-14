@@ -31,9 +31,9 @@ const HeroSection = () => {
         </p>
 
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
-          <span className="text-[#4a3d5c]">A Guided Crystal</span>
+          <span className="text-[#4a3d5c]">A Guided</span>
           <br />
-          <span className="text-[#9e6878]">Meditation Journey</span>
+          <span className="text-[#9e6878]">Crystal Meditation Journey</span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#5f5278] max-w-2xl mx-auto mb-10 leading-relaxed">
