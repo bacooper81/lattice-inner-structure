@@ -20,26 +20,26 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-rose-400 bg-clip-text text-transparent">
+        <p className="lattice-logo text-lg md:text-xl mb-8 text-[#8b7b9e]">
           Lattice
         </p>
 
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
-          <span className="bg-gradient-to-br from-slate-800 via-violet-900 to-slate-800 bg-clip-text text-transparent">Build Your</span>
+          <span className="text-[#5d4e6d]">Build Your</span>
           <br />
-          <span className="bg-gradient-to-r from-violet-700 via-fuchsia-600 to-rose-500 bg-clip-text text-transparent">Inner Lattice</span>
+          <span className="text-[#6b5a7a]">Inner Lattice</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-[#7a6b8a] max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="xl" className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-rose-400 text-white hover:opacity-90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
+          <Button size="xl" className="bg-[#6b5a7a] text-white hover:bg-[#5d4e6d] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
-          <Button variant="outline" size="xl" className="border-violet-300 text-violet-700 hover:bg-violet-50/50 font-serif tracking-widest uppercase text-xs">
+          <Button variant="outline" size="xl" className="border-[#b8a9c9] text-[#6b5a7a] hover:bg-[#e8dff0]/50 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
