@@ -30,19 +30,22 @@ const HeroSection = () => {
           Lattice
         </p>
 
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
-          A Guided <span className="text-[rgb(158,104,120)]">Crystal Meditation Journey</span>
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
+          <span className="text-[#4a3d5c]">Build Your</span>
+          <br />
+          <span className="text-[#9e6878]">Inner Lattice</span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#5f5278] max-w-2xl mx-auto mb-10 leading-relaxed">
-          Build your inner lattice with structured paths that don't just calm you — they construct something lasting within.
+          A guided crystal meditation app with structured paths that don't just calm you—
+          they construct something lasting within.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="xl" className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-sm transition-all">
+          <Button size="xl" className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all">
             Begin Your Journey
           </Button>
-          <Button variant="outline" size="xl" className="border-[#a090b8] text-[#6d5a7d] hover:bg-[#e0d4eb]/50 font-serif tracking-widest uppercase text-sm">
+          <Button variant="outline" size="xl" className="border-[#a090b8] text-[#6d5a7d] hover:bg-[#e0d4eb]/50 font-serif tracking-widest uppercase text-xs">
             Explore Paths
           </Button>
         </div>
