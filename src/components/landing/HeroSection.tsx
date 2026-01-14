@@ -36,7 +36,7 @@ const HeroSection = () => {
           <span className="text-[#9e6878]">Inner Lattice</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-[#5f5278] max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed">
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.
         </p>
