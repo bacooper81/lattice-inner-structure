@@ -16,8 +16,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Lattice specific variants
-        hero: "bg-white text-slate-900 hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs",
-        crystal: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs",
+        hero: "bg-white text-slate-900 hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-sm",
+        crystal: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:-translate-y-0.5 font-serif tracking-widest uppercase text-sm",
         subtle: "bg-white/20 text-white border border-white/30 hover:bg-white/30 backdrop-blur-sm font-medium",
       },
       size: {
