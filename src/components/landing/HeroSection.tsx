@@ -32,9 +32,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-primary leading-tight mb-6"
         >
-          Build Your
+          Meditation That
           <br />
-          <span className="text-accent">Inner Lattice</span>
+          <span className="text-accent">Builds Something</span>
         </motion.h1>
 
         <motion.p
@@ -43,8 +43,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Guided crystal meditations that transform who you are through vivid imagery,
-          real skills, and paths of inner growth.
+          Most meditation helps you feel calm. Lattice helps you become someone
+          who carries calm with them—through structured paths that build real inner strength.
         </motion.p>
 
         <motion.div

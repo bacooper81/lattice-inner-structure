@@ -3,22 +3,22 @@ import { Diamond, Compass, Sparkles } from "lucide-react";
 
 const features = [
   {
-    icon: Diamond,
-    title: "Crystal-Paired Meditations",
+    icon: Compass,
+    title: "Paths, Not Playlists",
     description:
-      "Each session connects you with a crystal's unique energy through vivid visualization. No physical crystal needed—the imagery does the work.",
+      "Each journey unfolds over days with sessions that build on each other. You don't just meditate—you travel somewhere.",
   },
   {
-    icon: Compass,
-    title: "Transformative Paths",
+    icon: Diamond,
+    title: "Crystal Imagery That Works",
     description:
-      "Multi-day journeys with narrative arcs. Move through grounding, intuition, inner healing, and more—each path building on the last.",
+      "Stand on a beach of blue agate. Drop a hematite sphere into a well. Vivid visualizations connect you to each crystal's essence—no physical stone required.",
   },
   {
     icon: Sparkles,
-    title: "Real Skills, Real Growth",
+    title: "Skills You Keep",
     description:
-      "Beyond relaxation. Learn discipline, presence, and self-mastery through metaphors that stay with you long after the session ends.",
+      "Water a seed for years as it grows into a towering tree. The metaphors teach discipline, presence, and self-mastery that stays with you.",
   },
 ];
 
@@ -53,10 +53,10 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <p className="text-accent font-serif tracking-widest uppercase text-sm mb-4">
-            What Makes Lattice Different
+            How Lattice Is Different
           </p>
           <h2 className="lattice-heading mb-6">
-            More Than Meditation
+            Structure That Transforms
           </h2>
           <div className="lattice-divider mx-auto" />
         </motion.div>
