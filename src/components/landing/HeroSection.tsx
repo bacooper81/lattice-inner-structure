@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Top fade - 125px strong fade at visible top of section */}
       <div className="absolute top-0 left-0 right-0 h-[125px] z-30 bg-gradient-to-b from-background via-background/75 to-transparent" />
       {/* Background image with overlay */}
-      <div className="absolute -top-[60%] left-0 right-0 h-[150%]">
+      <div className="absolute -top-[48%] md:-top-[60%] left-0 right-0 h-[120%] md:h-[150%]">
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
