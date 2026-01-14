@@ -21,7 +21,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="lattice-logo text-primary text-lg md:text-xl mb-8"
+          className="lattice-logo text-lg md:text-xl mb-8 text-foreground drop-shadow-sm"
         >
           Lattice
         </motion.p>
@@ -30,18 +30,18 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-primary leading-tight mb-6"
+          className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-foreground drop-shadow-sm"
         >
           Build Your
           <br />
-          <span className="text-accent">Inner Lattice</span>
+          <span className="text-amber-700">Inner Lattice</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-sm"
         >
           A guided crystal meditation app with structured paths that don't just calm you—
           they construct something lasting within.

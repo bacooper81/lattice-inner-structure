@@ -18,20 +18,20 @@
     --popover: 40 25% 99%;
     --popover-foreground: 220 20% 20%;
 
-    /* Primary - Deep slate charcoal */
-    --primary: 220 15% 25%;
+    /* Primary - Deep slate charcoal - darker for contrast */
+    --primary: 220 20% 18%;
     --primary-foreground: 40 30% 97%;
 
     /* Secondary - Warm stone */
     --secondary: 35 15% 90%;
     --secondary-foreground: 220 15% 25%;
 
-    /* Muted - Soft taupe - darkened for better contrast */
+    /* Muted - Soft taupe - much darker for better contrast */
     --muted: 30 10% 92%;
-    --muted-foreground: 220 15% 35%;
+    --muted-foreground: 220 20% 28%;
 
-    /* Accent - Warm amber/gold for crystal energy - richer */
-    --accent: 38 55% 50%;
+    /* Accent - Warm amber/gold for crystal energy - deeper */
+    --accent: 35 70% 42%;
     --accent-foreground: 220 20% 15%;
 
     /* Crystalline highlight */
