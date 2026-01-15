@@ -25,8 +25,13 @@ const Login = () => {
           backgroundSize: '60px 60px'
         }}
       />
-      {/* Soft gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f8f0fa]/80 via-transparent to-[#f0e8f5]/80 pointer-events-none" />
+      {/* Edge fade vignette overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at center, transparent 20%, rgba(250,248,252,0.7) 60%, rgba(250,248,252,1) 90%)'
+        }}
+      />
       {/* Subtle corner accents */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-20 -left-20 w-[400px] h-[400px] bg-[#e0d0eb]/30 rounded-full blur-[100px]" />
