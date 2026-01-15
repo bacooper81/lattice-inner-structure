@@ -16,11 +16,15 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-[#f8f5fa] to-[#f0e8f5] px-4">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#e0d4eb]/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#f5e0e6]/40 rounded-full blur-3xl" />
+    <div className="min-h-screen flex items-center justify-center bg-[#faf8fc] px-4 relative overflow-hidden">
+      {/* Centered radial glow behind card */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Primary purple glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4c4e0]/40 rounded-full blur-[120px]" />
+        {/* Secondary rose accent glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] w-[400px] h-[400px] bg-[#f0e0e8]/50 rounded-full blur-[100px]" />
+        {/* Subtle top-left accent */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#e8e0f0]/30 rounded-full blur-[80px] -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       <motion.div
