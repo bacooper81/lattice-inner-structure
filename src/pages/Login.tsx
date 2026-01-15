@@ -16,15 +16,20 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#faf8fc] px-4 relative overflow-hidden">
-      {/* Centered radial glow behind card */}
+    <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+      {/* Gradient mesh background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#f8f0fa] via-[#faf8fc] to-[#f0e8f5]" />
       <div className="absolute inset-0 pointer-events-none">
-        {/* Primary purple glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4c4e0]/40 rounded-full blur-[120px]" />
-        {/* Secondary rose accent glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] w-[400px] h-[400px] bg-[#f0e0e8]/50 rounded-full blur-[100px]" />
-        {/* Subtle top-left accent */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#e8e0f0]/30 rounded-full blur-[80px] -translate-x-1/2 -translate-y-1/2" />
+        {/* Top-left lavender blob */}
+        <div className="absolute -top-20 -left-20 w-[500px] h-[500px] bg-[#e0d0eb]/60 rounded-full blur-[80px]" />
+        {/* Top-right cream/rose blob */}
+        <div className="absolute -top-10 -right-32 w-[400px] h-[400px] bg-[#f5e5eb]/70 rounded-full blur-[70px]" />
+        {/* Bottom-left warm accent */}
+        <div className="absolute bottom-0 left-1/4 w-[350px] h-[350px] bg-[#f0e0d8]/50 rounded-full blur-[90px]" />
+        {/* Bottom-right purple accent */}
+        <div className="absolute -bottom-20 -right-10 w-[450px] h-[450px] bg-[#d8d0e8]/50 rounded-full blur-[100px]" />
+        {/* Center subtle highlight */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-white/40 rounded-full blur-[60px]" />
       </div>
 
       <motion.div
