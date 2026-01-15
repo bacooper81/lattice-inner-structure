@@ -1,3 +1,4 @@
+import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import ResonanceSection from "@/components/landing/ResonanceSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
@@ -12,6 +13,7 @@ import Footer from "@/components/landing/Footer";
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
+      <Header />
       <HeroSection />
       <ResonanceSection />
       <FeaturesSection />
