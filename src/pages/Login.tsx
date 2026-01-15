@@ -16,20 +16,21 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Gradient mesh background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f8f0fa] via-[#faf8fc] to-[#f0e8f5]" />
+    <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden bg-[#faf8fc]">
+      {/* Geometric lattice pattern background */}
+      <div 
+        className="absolute inset-0 opacity-[0.08]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%236d5a7d' stroke-width='1'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Cpath d='M30 20L40 30L30 40L20 30Z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }}
+      />
+      {/* Soft gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#f8f0fa]/80 via-transparent to-[#f0e8f5]/80 pointer-events-none" />
+      {/* Subtle corner accents */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Top-left lavender blob */}
-        <div className="absolute -top-20 -left-20 w-[500px] h-[500px] bg-[#e0d0eb]/60 rounded-full blur-[80px]" />
-        {/* Top-right cream/rose blob */}
-        <div className="absolute -top-10 -right-32 w-[400px] h-[400px] bg-[#f5e5eb]/70 rounded-full blur-[70px]" />
-        {/* Bottom-left warm accent */}
-        <div className="absolute bottom-0 left-1/4 w-[350px] h-[350px] bg-[#f0e0d8]/50 rounded-full blur-[90px]" />
-        {/* Bottom-right purple accent */}
-        <div className="absolute -bottom-20 -right-10 w-[450px] h-[450px] bg-[#d8d0e8]/50 rounded-full blur-[100px]" />
-        {/* Center subtle highlight */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-white/40 rounded-full blur-[60px]" />
+        <div className="absolute -top-20 -left-20 w-[400px] h-[400px] bg-[#e0d0eb]/30 rounded-full blur-[100px]" />
+        <div className="absolute -bottom-20 -right-20 w-[400px] h-[400px] bg-[#d8d0e8]/30 rounded-full blur-[100px]" />
       </div>
 
       <motion.div
