@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Top fade - 125px strong fade at visible top of section */}
       <div className="absolute top-0 left-0 right-0 h-[125px] z-30 bg-gradient-to-b from-background via-background/75 to-transparent" />
       {/* Background image with overlay */}
-      <div className="absolute -top-[38%] md:-top-[60%] left-0 right-0 h-[96%] md:h-[150%]">
+      <div className="absolute -top-[20%] md:-top-[60%] left-0 right-0 h-[96%] md:h-[150%]">
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
@@ -28,9 +28,6 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
-        <p className="lattice-logo text-lg md:text-xl mb-8 text-foreground/60">
-          Lattice
-        </p>
 
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
           <span className="text-[#4a3d5c]">Build Your</span>
