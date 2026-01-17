@@ -21,7 +21,7 @@ const ResonanceSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-8">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-base mb-8">
             The Problem
           </p>
 
