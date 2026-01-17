@@ -26,17 +26,17 @@ const CTASection = () => {
         >
           <p className="lattice-logo text-lg mb-6 text-[#7a6889]">Lattice</p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
-            Your Inner Lattice Is Waiting to Be Built
+            Ready for Real Change?
           </h2>
           <p className="text-lg text-[#5f5278] mb-10 leading-relaxed">
-            The first session is free. Start the Path of Grounding and feel the difference
-            structure makes.
+            Your first 10-minute session is free. Experience what it feels like when your crystal practice 
+            actually delivers results.
           </p>
           <Button 
             size="xl" 
             className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all"
           >
-            Start Your First Session
+            Start My Journey
           </Button>
         </motion.div>
       </div>

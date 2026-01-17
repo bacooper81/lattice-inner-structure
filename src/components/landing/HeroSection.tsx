@@ -29,23 +29,23 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
 
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6">
-          <span className="text-[#4a3d5c]">Build Your</span>
+        <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+          <span className="text-[#4a3d5c]">You Feel Your Crystals' Energy —</span>
           <br />
-          <span className="text-[#9e6878]">Inner Lattice</span>
+          <span className="text-[#9e6878]">But Where's the Real Change?</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-          A guided crystal meditation app with structured paths that don't just calm you—
-          they construct something lasting within.
+        <p className="text-base md:text-lg text-[#5f5278] max-w-2xl mx-auto mb-4 leading-relaxed font-medium">
+          Join Lattice, a Crystal Meditation App That Builds Inner Structure You Can Rely on When it Matters.
+        </p>
+        
+        <p className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto mb-10 leading-relaxed">
+          Each 10-minute session helps you embody new ways of being that bring results — not just good vibes.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="xl" className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all">
-            Begin Your Journey
-          </Button>
-          <Button variant="outline" size="xl" className="border-[#a090b8] text-[#6d5a7d] hover:bg-[#e0d4eb]/50 font-serif tracking-widest uppercase text-base">
-            Explore Paths
+            Start My Journey
           </Button>
         </div>
       </div>

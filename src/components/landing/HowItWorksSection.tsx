@@ -52,10 +52,10 @@ const HowItWorksSection = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
-              The Journey
+              How It Works
             </p>
             <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">
-              How Paths Work
+              10 Minutes to Real Results
             </h2>
 
             <div className="space-y-8">

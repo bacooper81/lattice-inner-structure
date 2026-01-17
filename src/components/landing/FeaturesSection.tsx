@@ -53,10 +53,10 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
-            How Lattice Is Different
+            Why Lattice Works
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
-            Structure That Transforms
+            Results, Not Just Good Vibes
           </h2>
           <div className="lattice-divider mx-auto" />
         </motion.div>

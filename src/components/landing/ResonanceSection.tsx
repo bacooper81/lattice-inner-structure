@@ -22,7 +22,7 @@ const ResonanceSection = () => {
           className="max-w-3xl mx-auto text-center"
         >
           <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-8">
-            A Different Kind of Practice
+            The Problem
           </p>
 
           <motion.p
@@ -32,9 +32,9 @@ const ResonanceSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-serif text-2xl md:text-3xl lg:text-4xl text-[#4a3d5c] leading-relaxed mb-8"
           >
-            You're not looking for another way to relax.
+            You've felt that spark with your crystals.
             <br />
-            <span className="text-[#9e6878]">You're looking for something to build.</span>
+            <span className="text-[#9e6878]">But the feeling fades. Life takes over. Nothing sticks.</span>
           </motion.p>
 
           <motion.div
@@ -52,9 +52,9 @@ const ResonanceSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl text-[#5f5278] leading-relaxed max-w-2xl mx-auto"
           >
-            A foundation. An architecture of stillness that holds weight. 
-            Lattice guides you through paths that don't just calm—they construct 
-            something lasting within you.
+            Most crystal meditations give you a moment of peace—but no lasting change. 
+            Lattice is different. It builds inner structure through guided paths that 
+            actually transform how you show up in your life.
           </motion.p>
         </motion.div>
       </div>
