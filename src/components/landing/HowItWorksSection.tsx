@@ -52,10 +52,10 @@ const HowItWorksSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4 text-center lg:text-left">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
               How It Works
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8 text-center lg:text-left">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">
               10 Minutes to Real Results
             </h2>
 
@@ -73,10 +73,10 @@ const HowItWorksSection = () => {
                     {step.number}
                   </span>
                   <div>
-                    <h3 className="font-serif text-xl font-semibold text-[#4a3d5c] mb-2">
+                    <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-[#5f5278] leading-relaxed">
+                    <p className="text-[#5f5278] text-lg leading-relaxed">
                       {step.description}
                     </p>
                   </div>

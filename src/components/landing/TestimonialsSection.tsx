@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
             What People Are Experiencing
           </h2>
           <div className="lattice-divider mx-auto mb-6" />
-          <p className="text-[#5f5278] text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Discover how Lattice has helped others build their inner foundation
           </p>
         </motion.div>
@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
                   />
                 ))}
               </div>
-              <blockquote className="text-[#5f5278] mb-6 leading-relaxed">
+              <blockquote className="text-[#5f5278] text-lg mb-6 leading-relaxed">
                 "{testimonial.content}"
               </blockquote>
               <div className="border-t border-border/50 pt-4">

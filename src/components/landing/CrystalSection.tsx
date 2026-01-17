@@ -14,13 +14,13 @@ const CrystalSection = () => {
             transition={{ duration: 0.8 }}
             className="order-2 lg:order-1"
           >
-            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4 text-center lg:text-left">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
               Crystal Symbolism
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6 text-center lg:text-left">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
               Crystals Are Always Optional
             </h2>
-            <div className="space-y-6 text-[#5f5278] leading-relaxed">
+            <div className="space-y-6 text-[#5f5278] text-lg leading-relaxed">
               <p>
                 Each meditation is paired with a crystal whose energy aligns perfectly with the session's theme.
               </p>
@@ -30,7 +30,7 @@ const CrystalSection = () => {
               <p>
                 Through guided imagery, you'll connect with each crystal's essence—
               </p>
-              <ul className="list-none space-y-2 pl-4">
+              <ul className="list-disc space-y-2 pl-6 marker:text-[#9e6878]">
                 <li>Grounding on a beach of Blue Lace Agate stones</li>
                 <li>Warming a hearth with Carnelian to prepare for what's ahead</li>
                 <li>Walking a Bronzite path that holds stillness, connection, and rest</li>
@@ -41,11 +41,11 @@ const CrystalSection = () => {
             </div>
 
             {/* Crystal tags */}
-            <div className="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-3 mt-8">
               {["Blue Lace Agate", "Tiger's Eye", "Bronzite", "Dalmatian Jasper", "Hematite", "Carnelian", "Moss Agate", "Dumortierite", "Smoky Quartz", "Black Tourmaline", "Red Jasper", "Petrified Wood"].map((crystal) => (
                 <span
                   key={crystal}
-                  className="px-4 py-2 rounded-full bg-[#f5f0f8] text-sm text-[#6d5a7d] border border-[#e8dff0]"
+                  className="px-4 py-2 rounded-full bg-[#f5f0f8] text-base text-[#6d5a7d] border border-[#e8dff0]"
                 >
                   {crystal}
                 </span>
