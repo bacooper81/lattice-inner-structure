@@ -22,7 +22,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="lattice-section bg-background">
+    <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
