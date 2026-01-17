@@ -52,7 +52,7 @@ const HowItWorksSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-base mb-4">
               How It Works
             </p>
             <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">

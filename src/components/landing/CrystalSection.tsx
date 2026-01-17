@@ -14,7 +14,7 @@ const CrystalSection = () => {
             transition={{ duration: 0.8 }}
             className="order-2 lg:order-1"
           >
-            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-base mb-4">
               Crystal Symbolism
             </p>
             <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
