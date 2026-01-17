@@ -23,7 +23,7 @@ const paths = [
 
 const PathsPreviewSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm">
+    <section className="lattice-section bg-background">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ const PathsPreviewSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-base mb-4">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-lg mb-4">
             Explore
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">

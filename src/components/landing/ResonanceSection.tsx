@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ResonanceSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm relative overflow-hidden">
+    <section className="lattice-section bg-background relative overflow-hidden">
       {/* Subtle geometric pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -21,7 +21,7 @@ const ResonanceSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-base mb-8">
+          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-lg mb-8">
             The Problem
           </p>
 
