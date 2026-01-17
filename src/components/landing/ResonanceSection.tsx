@@ -50,11 +50,29 @@ const ResonanceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg md:text-xl text-[#5f5278] leading-relaxed max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-[#5f5278] leading-relaxed max-w-2xl mx-auto mb-6"
           >
-            Most crystal meditations give you a moment of peace—but no lasting change. 
-            Lattice is different. It builds inner structure through guided paths that 
-            actually transform how you show up in your life.
+            Most crystal practices treat energy itself as the solution. You connect to a crystal, feel something shift, and hope that feeling translates into real change.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-lg md:text-xl text-[#5f5278] leading-relaxed max-w-2xl mx-auto mb-6"
+          >
+            There's no guidance for how to think differently, respond differently, or live differently afterward.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-lg md:text-xl text-[#5f5278] leading-relaxed max-w-2xl mx-auto font-medium"
+          >
+            Lattice is different. It helps you embody real ways of being—so how you show up in your life actually changes.
           </motion.p>
         </motion.div>
       </div>

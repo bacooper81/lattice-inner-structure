@@ -39,15 +39,15 @@ const HeroSection = () => {
           Join Lattice, a Crystal Meditation App That Builds Inner Structure You Can Rely on When it Matters.
         </p>
         
-        <p className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto mb-10 leading-relaxed">
-          Each 10-minute session helps you embody new ways of being that bring results — not just good vibes.
-        </p>
-
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="xl" className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all">
             Start My Journey
           </Button>
         </div>
+
+        <p className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto mt-16 leading-relaxed">
+          Each 10-minute session helps you embody new ways of being that create real results — not just good vibes.
+        </p>
       </div>
 
       {/* Scroll indicator */}

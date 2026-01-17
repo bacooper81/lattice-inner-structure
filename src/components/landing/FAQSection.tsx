@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
@@ -9,27 +10,27 @@ import {
 const faqs = [
   {
     question: "Do I need to own crystals to use Lattice?",
-    answer: "Not at all. Crystals are always optional. Each meditation includes rich, vivid imagery that helps you connect with the crystal's energy through visualization alone. You'll experience the full benefit whether you hold a physical crystal or simply imagine it.",
+    answer: "No. Crystals are always optional. Each session works through guided imagery, so you can experience the practice fully with or without a physical stone.",
   },
   {
     question: "What makes Lattice different from other meditation apps?",
-    answer: "Lattice offers structured, multi-day paths that guide you through a complete transformation—not just isolated sessions. Each path follows a narrative arc centered on themes like grounding, intuition, or inner healing. The crystal imagery adds a unique dimension that deepens your practice and makes each session memorable.",
+    answer: "Most meditation apps focus on relaxation or momentary insight. Lattice uses crystal symbolism to help you practice new ways of being that carry into everyday life.",
   },
   {
     question: "How long are the meditation sessions?",
-    answer: "Sessions typically range from 10 to 20 minutes, designed to fit into your daily routine while still providing a meaningful, transformative experience. Each path builds progressively, so even shorter sessions contribute to lasting change.",
+    answer: "Most sessions are about 10 minutes. They're designed to fit into your days while still building something meaningful over time.",
   },
   {
     question: "I'm new to meditation. Is Lattice beginner-friendly?",
-    answer: "Absolutely. The guided visualizations make it easy to stay focused, even if you've never meditated before. The vivid imagery gives your mind something concrete to hold onto, which many beginners find more accessible than traditional breath-focused meditation.",
+    answer: "Yes. You'll be guided every step of the way. The visualizations give your mind something to engage with, which many people find more accessible than silent or breath-only meditation.",
   },
   {
     question: "How do the paths work?",
-    answer: "Each path is a linear journey of 7-14 days, designed to be completed in order. You'll progress through sessions that build on each other, developing specific skills like consistency, emotional release, or intuitive awareness. Think of it as a course in personal development wrapped in the beauty of crystal meditation.",
+    answer: "Each path centers on a specific theme—such as grounding, intuition, or inner healing—and unfolds as a linear journey meant to be experienced in order. Sessions build on one another, helping you embody that theme over time rather than starting fresh each day.",
   },
   {
     question: "Can I repeat paths or sessions?",
-    answer: "Yes! Many users return to their favorite paths seasonally or whenever they need to reconnect with a particular quality. Some paths are designed for periodic revisiting as you grow and change.",
+    answer: "Absolutely. Repeating paths or sessions helps the themes settle more deeply, allowing the practice to stay with you over time.",
   },
 ];
 
@@ -79,6 +80,21 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-center mt-12"
+        >
+          <Button 
+            size="xl" 
+            className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all"
+          >
+            Start My Journey
+          </Button>
         </motion.div>
       </div>
     </section>

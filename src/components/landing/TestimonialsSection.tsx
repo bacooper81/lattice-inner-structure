@@ -4,20 +4,17 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah M.",
-    role: "Yoga Instructor",
-    content: "I've tried every meditation app. This is the first one where I feel like I'm actually building something. After finishing the Grounding path, I noticed I was different—not just during meditation, but all day.",
+    content: "I've tried many crystal meditations. These are the first ones where I feel like I'm building something. I'm more grounded, not just during meditation but throughout the day.",
     rating: 5,
   },
   {
     name: "James K.",
-    role: "Software Engineer",
-    content: "I'm not into crystals, but the visualizations are incredible. Standing in that circular temple, dropping the hematite sphere—I still think about it. The metaphors actually teach you something.",
+    content: "The visualizations are incredible. Standing in that circular temple, dropping the hematite sphere—I still think about it. The metaphors actually teach you something.",
     rating: 5,
   },
   {
     name: "Elena R.",
-    role: "Therapist",
-    content: "Most apps help you relax. Lattice helps you grow. The path structure keeps clients engaged in a way random sessions never did. It's meditation that goes somewhere.",
+    content: "Most apps help you relax. Lattice helps you grow. The way the sessions build kept me engaged in a way random meditations never did. It's meditation that goes somewhere.",
     rating: 5,
   },
 ];
@@ -47,7 +44,7 @@ const TestimonialsSection = () => {
             Testimonials
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
-            Voices from the Journey
+            What People Are Experiencing
           </h2>
           <div className="lattice-divider mx-auto mb-6" />
           <p className="text-[#5f5278] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -77,8 +74,7 @@ const TestimonialsSection = () => {
                 "{testimonial.content}"
               </blockquote>
               <div className="border-t border-border/50 pt-4">
-                <p className="font-serif text-[#4a3d5c] font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-[#7a6889]">{testimonial.role}</p>
+                <p className="font-serif text-[#4a3d5c] font-semibold">- {testimonial.name}</p>
               </div>
             </motion.div>
           ))}
