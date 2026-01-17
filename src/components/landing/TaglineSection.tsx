@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const TaglineSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-[#4a3d5c]">
+    <section className="py-16 md:py-24 bg-[#5a6b5a]">
       <div className="lattice-container">
         <motion.p
           initial={{ opacity: 0, y: 20 }}

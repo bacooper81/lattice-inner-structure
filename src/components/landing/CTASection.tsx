@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="lattice-section bg-[#9e6878]">
+    <section className="lattice-section bg-[#5a6b5a]">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -26,7 +26,7 @@ const CTASection = () => {
           </p>
           <Button 
             size="xl" 
-            className="bg-white text-[#9e6878] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-white text-[#4a5a4a] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start My Journey
           </Button>
