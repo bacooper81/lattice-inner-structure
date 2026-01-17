@@ -6,19 +6,19 @@ const features = [
     icon: Compass,
     title: "Paths, Not Playlists",
     description:
-      "Each journey unfolds over days with sessions that build on each other. You don't just meditate—you travel somewhere.",
+      "Each session builds on the ones before it. You don't just meditate—you travel somewhere.",
   },
   {
     icon: Diamond,
     title: "Crystal Imagery That Works",
     description:
-      "Stand on a beach of blue agate. Drop a hematite sphere into a well. Vivid visualizations connect you to each crystal's essence—no physical stone required.",
+      "Vivid visualizations connect you to each crystal's essence—no physical stone required.",
   },
   {
     icon: Sparkles,
-    title: "Skills You Keep",
+    title: "Embodiment Over Insight",
     description:
-      "Water a seed for years as it grows into a towering tree. The metaphors teach discipline, presence, and self-mastery that stays with you.",
+      "The metaphors teach steadiness, presence, and self-trust that stays with you.",
   },
 ];
 

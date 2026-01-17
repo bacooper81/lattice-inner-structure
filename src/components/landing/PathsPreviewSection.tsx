@@ -4,17 +4,20 @@ const paths = [
   {
     title: "Path of Grounding",
     description: "Move from scattered to solid. Build steadiness into your days.",
-    sessions: 6,
+    sessions: 12,
+    status: "available",
   },
   {
     title: "Path of Intuition",
     description: "Learn to trust the quiet knowing that guides from within.",
-    sessions: 5,
+    sessions: null,
+    status: "coming_soon",
   },
   {
     title: "Path of Inner Healing",
     description: "Release old patterns and make space for renewal.",
-    sessions: 7,
+    sessions: null,
+    status: "coming_soon",
   },
 ];
 
@@ -37,7 +40,7 @@ const PathsPreviewSection = () => {
           </h2>
           <div className="lattice-divider mx-auto mb-6" />
           <p className="text-[#5f5278] text-lg max-w-2xl mx-auto leading-relaxed">
-            Each path is a complete journey—a narrative arc that guides you through transformation, one session at a time.
+            Each Path is a complete journey—a narrative arc designed to support a specific kind of inner change.
           </p>
         </motion.div>
 
@@ -62,11 +65,13 @@ const PathsPreviewSection = () => {
                       <rect width="100" height="100" fill={`url(#lattice-${index})`} />
                     </svg>
                   </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
-                      <span className="font-serif text-lg font-semibold text-[#9e6878]">{path.sessions}</span>
+                  {path.status === "available" && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
+                        <span className="font-serif text-lg font-semibold text-[#9e6878]">{path.sessions}</span>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 <h3 className="font-serif text-xl font-semibold text-[#4a3d5c] mb-3">
@@ -76,7 +81,7 @@ const PathsPreviewSection = () => {
                   {path.description}
                 </p>
                 <p className="text-xs text-[#7a6889] mt-4 uppercase tracking-wider">
-                  {path.sessions} Sessions
+                  {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
                 </p>
               </div>
             </motion.div>

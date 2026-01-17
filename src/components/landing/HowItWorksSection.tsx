@@ -1,21 +1,22 @@
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import pathImage from "@/assets/path-journey.jpg";
 
 const steps = [
   {
     number: "01",
     title: "Choose Your Path",
-    description: "Select a journey that speaks to where you are—grounding, intuition, inner healing, and more.",
+    description: "Select a journey that speaks to where you are—grounding, creativity, inner healing, and more.",
   },
   {
     number: "02",
-    title: "Follow the Arc",
-    description: "Each path unfolds over days, with sessions building upon each other in a meaningful sequence.",
+    title: "Move Through the Arc",
+    description: "Each Path unfolds over days, with sessions that build on one another in a meaningful sequence.",
   },
   {
     number: "03",
-    title: "Transform Within",
-    description: "Through vivid imagery and crystal energies, build lasting inner structures that support your growth.",
+    title: "Build Your Inner Lattice",
+    description: "Through guided visualization, you embody ways of being that naturally show up in daily life.",
   },
 ];
 
@@ -82,6 +83,21 @@ const HowItWorksSection = () => {
                 </motion.div>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="mt-10"
+            >
+              <Button 
+                size="xl" 
+                className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all"
+              >
+                Start My Journey
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </div>
