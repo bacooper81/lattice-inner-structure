@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Diamond, Compass, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
@@ -85,6 +86,21 @@ const FeaturesSection = () => {
               </p>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-12 flex justify-center"
+        >
+          <Button 
+            size="xl" 
+            className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+          >
+            Start My Journey
+          </Button>
         </motion.div>
       </div>
     </section>

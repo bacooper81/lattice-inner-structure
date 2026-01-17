@@ -52,10 +52,10 @@ const HowItWorksSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4 text-center lg:text-left">
               How It Works
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8 text-center lg:text-left">
               10 Minutes to Real Results
             </h2>
 
@@ -84,20 +84,6 @@ const HowItWorksSection = () => {
               ))}
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-10"
-            >
-              <Button 
-                size="xl" 
-                className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-xs transition-all"
-              >
-                Start My Journey
-              </Button>
-            </motion.div>
           </motion.div>
         </div>
       </div>

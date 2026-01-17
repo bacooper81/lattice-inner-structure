@@ -8,6 +8,7 @@ import PathsPreviewSection from "@/components/landing/PathsPreviewSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import FAQSection from "@/components/landing/FAQSection";
 import CTASection from "@/components/landing/CTASection";
+import ClosingSection from "@/components/landing/ClosingSection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <PathsPreviewSection />
       <CTASection />
       <FAQSection />
+      <ClosingSection />
       <Footer />
     </main>
   );
