@@ -14,10 +14,10 @@ const CrystalSection = () => {
             transition={{ duration: 0.8 }}
             className="order-2 lg:order-1"
           >
-            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4">
+            <p className="text-[#7a6889] font-serif tracking-widest uppercase text-sm mb-4 text-center lg:text-left">
               Crystal Symbolism
             </p>
-            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6 text-center lg:text-left">
               Crystals Are Always Optional
             </h2>
             <div className="space-y-6 text-[#5f5278] leading-relaxed">
@@ -41,7 +41,7 @@ const CrystalSection = () => {
             </div>
 
             {/* Crystal tags */}
-            <div className="flex flex-wrap gap-3 mt-8">
+            <div className="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
               {["Blue Lace Agate", "Tiger's Eye", "Bronzite", "Dalmatian Jasper", "Hematite", "Carnelian", "Moss Agate", "Dumortierite", "Smoky Quartz", "Black Tourmaline", "Red Jasper", "Petrified Wood"].map((crystal) => (
                 <span
                   key={crystal}
