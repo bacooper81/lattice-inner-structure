@@ -24,11 +24,11 @@ const ClosingSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <p className="lattice-logo text-lg mb-6 text-[#7a6889]">Lattice</p>
+          <p className="lattice-logo text-xl mb-6 text-[#7a6889]">Lattice</p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
             Begin Your First Session
           </h2>
-          <p className="text-lg text-[#5f5278] mb-10 leading-relaxed">
+          <p className="text-xl md:text-2xl text-[#5f5278] mb-10 leading-relaxed">
             Ten minutes. No crystals required.
           </p>
           <Button 

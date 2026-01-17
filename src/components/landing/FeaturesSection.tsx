@@ -78,10 +78,10 @@ const FeaturesSection = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#f5f0f8] text-[#7a6889] mb-6 group-hover:scale-110 transition-transform duration-300">
                 <feature.icon className="w-7 h-7" strokeWidth={1.5} />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-[#4a3d5c] mb-4">
+              <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-4">
                 {feature.title}
               </h3>
-              <p className="text-[#5f5278] leading-relaxed">
+              <p className="text-[#5f5278] text-lg leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

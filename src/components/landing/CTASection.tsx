@@ -15,10 +15,10 @@ const CTASection = () => {
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
             Try Lattice Risk Free
           </h2>
-          <p className="text-lg text-[#5f5278] mb-6 leading-relaxed">
+          <p className="text-lg md:text-xl text-[#5f5278] mb-6 leading-relaxed">
             Experience what it feels like when your crystal practice actually delivers results.
           </p>
-          <p className="text-base text-[#5f5278] mb-10 leading-relaxed">
+          <p className="text-lg text-[#5f5278] mb-10 leading-relaxed">
             Just $2.50/month, billed yearly. Cancel anytime within 30 days for a full refund.
           </p>
           <Button 

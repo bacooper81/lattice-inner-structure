@@ -35,7 +35,7 @@ const HeroSection = () => {
           <span className="text-[#9e6878]">But Where's the Real Change?</span>
         </h1>
 
-        <p className="text-base md:text-lg text-[#5f5278] max-w-2xl mx-auto mb-4 leading-relaxed font-medium">
+        <p className="text-lg md:text-xl lg:text-2xl text-[#5f5278] max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
           Join Lattice, a Crystal Meditation App That Builds Inner Structure You Can Rely on When it Matters.
         </p>
         
@@ -44,10 +44,6 @@ const HeroSection = () => {
             Start My Journey
           </Button>
         </div>
-
-        <p className="text-base md:text-lg text-foreground/70 max-w-xl mx-auto mt-16 leading-relaxed">
-          Each 10-minute session helps you embody new ways of being that create real results — not just good vibes.
-        </p>
       </div>
 
       {/* Scroll indicator */}

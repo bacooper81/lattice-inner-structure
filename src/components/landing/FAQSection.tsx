@@ -52,7 +52,7 @@ const FAQSection = () => {
             Common Questions
           </h2>
           <div className="lattice-divider mx-auto mb-6" />
-          <p className="text-[#5f5278] text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about your journey with Lattice
           </p>
         </motion.div>
@@ -71,10 +71,10 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-card border border-border/50 rounded-xl px-6 data-[state=open]:shadow-lattice transition-all"
               >
-                <AccordionTrigger className="text-left font-serif text-[#4a3d5c] hover:text-[#6d5a7d] transition-colors py-5">
+                <AccordionTrigger className="text-left font-serif text-lg text-[#4a3d5c] hover:text-[#6d5a7d] transition-colors py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-[#5f5278] leading-relaxed pb-5">
+                <AccordionContent className="text-[#5f5278] text-lg leading-relaxed pb-5">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
