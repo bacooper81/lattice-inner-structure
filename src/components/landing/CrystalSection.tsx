@@ -3,7 +3,7 @@ import crystalsImage from "@/assets/crystals-arrangement.jpg";
 
 const CrystalSection = () => {
   return (
-    <section className="lattice-section bg-background overflow-hidden">
+    <section className="lattice-section bg-lattice-warm overflow-hidden">
       <div className="lattice-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

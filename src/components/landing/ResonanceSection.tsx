@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ResonanceSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm relative overflow-hidden">
+    <section className="lattice-section bg-background relative overflow-hidden">
       {/* Subtle geometric pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
