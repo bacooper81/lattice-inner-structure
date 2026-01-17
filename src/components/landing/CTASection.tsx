@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="lattice-section bg-[#4a3d5c]">
+    <section className="lattice-section bg-[#9e6878]">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,15 +18,15 @@ const CTASection = () => {
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-white">
             Try Lattice Risk Free
           </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-6 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/85 mb-6 leading-relaxed">
             Experience what it feels like when your crystal practice actually delivers results.
           </p>
-          <p className="text-lg text-white/80 mb-10 leading-relaxed">
+          <p className="text-lg text-white/85 mb-10 leading-relaxed">
             Just $2.50/month, billed yearly. Cancel anytime within 30 days for a full refund.
           </p>
           <Button 
             size="xl" 
-            className="bg-white text-[#4a3d5c] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-white text-[#9e6878] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start My Journey
           </Button>
