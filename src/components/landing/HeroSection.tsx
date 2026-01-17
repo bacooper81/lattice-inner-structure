@@ -5,26 +5,22 @@ import heroImage from "@/assets/hero-crystal-lattice.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 -mt-8 md:-mt-12">
+    <section className="relative flex items-center justify-center overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24">
 
-      {/* Top fade - responsive height with 85% opacity */}
-      <div className="absolute top-0 left-0 right-0 h-[140px] md:h-[216px] z-30 bg-gradient-to-b from-background via-background/85 via-60% to-transparent" />
       {/* Background image with overlay */}
-      <div className="absolute -top-[29%] md:-top-[60%] left-0 right-0 h-[96%] md:h-[150%]">
+      <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Crystal lattice meditation"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-top"
         />
         {/* Soft dreamy edge fade */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_45%,_transparent_25%,_rgba(255,255,255,0.6)_55%,_rgba(255,255,255,0.95)_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-background" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-30% to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-white/70" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_35%,_transparent_15%,_rgba(255,255,255,0.6)_45%,_hsl(40,20%,98%)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(40,20%,98%)] via-transparent via-20% to-[hsl(40,20%,98%)]" />
       </div>
 
       {/* Radial fade behind text */}
-      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.85)_0%,_rgba(255,255,255,0.4)_40%,_transparent_70%)]" />
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.9)_0%,_rgba(255,255,255,0.5)_50%,_transparent_80%)]" />
 
       {/* Content */}
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">

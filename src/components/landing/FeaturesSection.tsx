@@ -44,7 +44,7 @@ const itemVariants = {
 
 const FeaturesSection = () => {
   return (
-    <section className="lattice-section bg-background">
+    <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

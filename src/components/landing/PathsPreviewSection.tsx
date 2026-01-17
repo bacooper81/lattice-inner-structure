@@ -23,7 +23,7 @@ const paths = [
 
 const PathsPreviewSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm">
+    <section className="lattice-section bg-background">
       <div className="lattice-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
