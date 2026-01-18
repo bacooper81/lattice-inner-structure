@@ -3,15 +3,6 @@ import { motion } from "framer-motion";
 const ResonanceSection = () => {
   return (
     <section className="lattice-section bg-background relative overflow-hidden">
-      {/* Subtle geometric pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <pattern id="resonance-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <circle cx="10" cy="10" r="1" fill="currentColor" />
-          </pattern>
-          <rect width="100" height="100" fill="url(#resonance-pattern)" />
-        </svg>
-      </div>
 
       <div className="lattice-container relative z-10">
         <motion.div

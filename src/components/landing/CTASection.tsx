@@ -3,8 +3,17 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="lattice-section bg-[#3a3642]">
-      <div className="lattice-container">
+    <section className="lattice-section bg-[#3a3642] relative overflow-hidden">
+      {/* Subtle geometric pattern */}
+      <div className="absolute inset-0 opacity-[0.08]">
+        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <pattern id="cta-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="white" strokeWidth="0.3" />
+          </pattern>
+          <rect width="100" height="100" fill="url(#cta-pattern)" />
+        </svg>
+      </div>
+      <div className="lattice-container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
