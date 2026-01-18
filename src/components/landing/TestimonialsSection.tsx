@@ -31,6 +31,13 @@ const TestimonialsSection = () => {
           <rect width="100" height="100" fill="url(#testimonial-pattern)" />
         </svg>
       </div>
+      {/* Edge fade vignette overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at center, transparent 30%, rgba(248,246,250,0.6) 70%, rgba(248,246,250,1) 95%)'
+        }}
+      />
 
       <div className="lattice-container relative z-10">
         <motion.div
