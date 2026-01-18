@@ -62,7 +62,7 @@ const PathsPreviewSection = () => {
                     <img 
                       src={pathOfGroundingCover} 
                       alt="Path of Grounding" 
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-[center_30%]"
                     />
                     {/* Strong white mist fade around edges */}
                     <div 
