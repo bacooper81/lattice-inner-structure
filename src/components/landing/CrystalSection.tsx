@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import crystalsImage from "@/assets/crystals-arrangement.jpg";
+import crystalEnergyImage from "@/assets/crystal-energy-visualization.jpg";
 
 const CrystalSection = () => {
   return (
@@ -60,8 +60,8 @@ const CrystalSection = () => {
           >
             <div className="aspect-square rounded-3xl overflow-hidden shadow-lattice">
               <img
-                src={crystalsImage}
-                alt="Healing crystals arrangement"
+                src={crystalEnergyImage}
+                alt="Ethereal crystal energy visualization"
                 className="w-full h-full object-cover"
               />
             </div>
