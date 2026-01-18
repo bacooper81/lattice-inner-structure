@@ -55,29 +55,26 @@ const PathsPreviewSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1 relative overflow-hidden">
-                {/* Full card background image for Path of Grounding */}
-                {index === 0 && (
-                  <>
+              <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
+                {/* Cover image or decorative pattern */}
+                {index === 0 ? (
+                  <div className="h-48 -mx-8 -mt-8 mb-6 relative overflow-hidden">
                     <img 
                       src={pathOfGroundingCover} 
-                      alt="" 
-                      className="absolute inset-0 w-full h-full object-cover object-top"
+                      alt="Path of Grounding" 
+                      className="w-full h-full object-cover object-top"
                     />
                     {/* Strong white mist fade around edges */}
                     <div 
                       className="absolute inset-0 pointer-events-none"
                       style={{
                         background: `
-                          radial-gradient(ellipse 70% 60% at center, transparent 10%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0.9) 65%, rgba(255,255,255,1) 80%)
+                          radial-gradient(ellipse 80% 70% at center 40%, transparent 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.95) 75%, rgba(255,255,255,1) 90%)
                         `
                       }}
                     />
-                  </>
-                )}
-
-                {/* Decorative pattern for other cards */}
-                {index !== 0 && (
+                  </div>
+                ) : (
                   <div className="h-40 rounded-xl mb-6 relative overflow-hidden bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4]">
                     <div className="absolute inset-0 opacity-20">
                       <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -90,18 +87,15 @@ const PathsPreviewSection = () => {
                   </div>
                 )}
 
-                <div className="relative z-10 flex flex-col flex-1">
-                  {index === 0 && <div className="h-32" />}
-                  <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-3">
-                    {path.title}
-                  </h3>
-                  <p className="text-[#5f5278] text-lg leading-relaxed flex-1">
-                    {path.description}
-                  </p>
-                  <p className="text-sm text-[#7a6889] mt-4 uppercase tracking-wider">
-                    {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
-                  </p>
-                </div>
+                <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-3">
+                  {path.title}
+                </h3>
+                <p className="text-[#5f5278] text-lg leading-relaxed flex-1">
+                  {path.description}
+                </p>
+                <p className="text-sm text-[#7a6889] mt-4 uppercase tracking-wider">
+                  {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
+                </p>
               </div>
             </motion.div>
           ))}
