@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import pathOfGroundingCover from "@/assets/path-of-grounding-cover.png";
 
 const paths = [
   {
@@ -55,20 +56,34 @@ const PathsPreviewSection = () => {
               className="group cursor-pointer"
             >
               <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
-                {/* Decorative lattice pattern */}
-                <div className="h-32 bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4] rounded-xl mb-6 relative overflow-hidden">
-                  <div className="absolute inset-0 opacity-20">
-                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                      <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                        <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-[#9e6878]" />
-                      </pattern>
-                      <rect width="100" height="100" fill={`url(#lattice-${index})`} />
-                    </svg>
-                  </div>
-                  {path.status === "available" && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
-                        <span className="font-serif text-lg font-semibold text-[#9e6878]">{path.sessions}</span>
+                {/* Cover image or decorative pattern */}
+                <div className="h-40 rounded-xl mb-6 relative overflow-hidden">
+                  {index === 0 ? (
+                    <>
+                      <img 
+                        src={pathOfGroundingCover} 
+                        alt="Path of Grounding" 
+                        className="w-full h-full object-cover"
+                      />
+                      {/* White mist fade around edges */}
+                      <div 
+                        className="absolute inset-0 pointer-events-none"
+                        style={{
+                          background: `
+                            radial-gradient(ellipse at center, transparent 30%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.85) 85%, rgba(255,255,255,1) 100%)
+                          `
+                        }}
+                      />
+                    </>
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4]">
+                      <div className="absolute inset-0 opacity-20">
+                        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                          <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-[#9e6878]" />
+                          </pattern>
+                          <rect width="100" height="100" fill={`url(#lattice-${index})`} />
+                        </svg>
                       </div>
                     </div>
                   )}
