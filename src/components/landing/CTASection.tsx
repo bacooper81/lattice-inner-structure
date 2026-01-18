@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CTASection = () => {
+  const navigate = useNavigate();
   return (
     <section className="lattice-section bg-[#3a3642]">
       <div className="lattice-container">
@@ -30,6 +32,7 @@ const CTASection = () => {
           
           <Button 
             size="xl" 
+            onClick={() => navigate("/onboarding/welcome")}
             className="bg-[#f5d5d9] text-[#3a3642] hover:bg-[#e8c0c5] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start with the Path of Grounding
