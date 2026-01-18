@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 const testimonials = [
@@ -40,13 +39,7 @@ const TestimonialsSection = () => {
       />
 
       <div className="lattice-container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             What People Are Experiencing
           </h2>
@@ -54,16 +47,12 @@ const TestimonialsSection = () => {
           <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Discover how Lattice has helped others build their inner foundation
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
+          {testimonials.map((testimonial) => (
+            <div
               key={testimonial.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="lattice-card group hover:shadow-lattice-hover transition-all duration-300"
             >
               <div className="flex gap-1 mb-4">
@@ -80,7 +69,7 @@ const TestimonialsSection = () => {
               <div className="border-t border-border/50 pt-4">
                 <p className="font-serif text-[#4a3d5c] font-semibold">- {testimonial.name}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

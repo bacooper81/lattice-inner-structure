@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import crystalsImage from "@/assets/crystals-arrangement.jpg";
 
 const CrystalSection = () => {
@@ -7,13 +6,7 @@ const CrystalSection = () => {
       <div className="lattice-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="order-2 lg:order-1"
-          >
+          <div className="order-2 lg:order-1">
             <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
               Crystals Are Always Optional
             </h2>
@@ -48,16 +41,10 @@ const CrystalSection = () => {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="order-1 lg:order-2 relative"
-          >
+          <div className="order-1 lg:order-2 relative">
             <div className="aspect-square rounded-3xl overflow-hidden shadow-lattice">
               <img
                 src={crystalsImage}
@@ -67,7 +54,7 @@ const CrystalSection = () => {
             </div>
             {/* Subtle glow effect */}
             <div className="absolute inset-0 rounded-3xl shadow-[0_0_60px_-20px_rgba(158,104,120,0.3)] pointer-events-none" />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
