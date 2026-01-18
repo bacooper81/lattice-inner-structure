@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import pathOfGroundingCover from "@/assets/path-of-grounding-cover.png";
+import pathOfInnerHealingCover from "@/assets/path-of-inner-healing-cover.png";
+import pathOfIntuitionCover from "@/assets/path-of-intuition-cover.png";
 
 const paths = [
   {
@@ -7,18 +9,21 @@ const paths = [
     description: "Move from scattered to solid. Build steadiness into your days.",
     sessions: 12,
     status: "available",
+    cover: pathOfGroundingCover,
   },
   {
     title: "Path of Intuition",
     description: "Learn to trust the quiet knowing that guides from within.",
     sessions: null,
     status: "coming_soon",
+    cover: pathOfIntuitionCover,
   },
   {
     title: "Path of Inner Healing",
     description: "Release old patterns and make space for renewal.",
     sessions: null,
     status: "coming_soon",
+    cover: pathOfInnerHealingCover,
   },
 ];
 
@@ -53,36 +58,23 @@ const PathsPreviewSection = () => {
               className="group cursor-pointer"
             >
               <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
-                {/* Cover image or decorative pattern */}
-                {index === 0 ? (
-                  <div className="h-48 -mx-8 -mt-8 mb-6 relative overflow-hidden">
-                    <img 
-                      src={pathOfGroundingCover} 
-                      alt="Path of Grounding" 
-                      className="w-full h-full object-cover object-[center_30%]"
-                    />
-                    {/* Strong white mist fade around edges */}
-                    <div 
-                      className="absolute inset-0 pointer-events-none"
-                      style={{
-                        background: `
-                          radial-gradient(ellipse 80% 70% at center 40%, transparent 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.95) 75%, rgba(255,255,255,1) 90%)
-                        `
-                      }}
-                    />
-                  </div>
-                ) : (
-                  <div className="h-40 rounded-xl mb-6 relative overflow-hidden bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4]">
-                    <div className="absolute inset-0 opacity-20">
-                      <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                          <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-[#9e6878]" />
-                        </pattern>
-                        <rect width="100" height="100" fill={`url(#lattice-${index})`} />
-                      </svg>
-                    </div>
-                  </div>
-                )}
+                {/* Cover image */}
+                <div className="h-48 -mx-8 -mt-8 mb-6 relative overflow-hidden">
+                  <img 
+                    src={path.cover} 
+                    alt={path.title} 
+                    className="w-full h-full object-cover object-[center_30%]"
+                  />
+                  {/* Strong white mist fade around edges */}
+                  <div 
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background: `
+                        radial-gradient(ellipse 80% 70% at center 40%, transparent 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.95) 75%, rgba(255,255,255,1) 90%)
+                      `
+                    }}
+                  />
+                </div>
 
                 <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-3">
                   {path.title}
