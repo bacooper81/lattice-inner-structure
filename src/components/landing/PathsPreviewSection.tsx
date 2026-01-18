@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import pathOfGroundingCover from "@/assets/path-of-grounding-cover.png";
 import pathOfInnerHealingCover from "@/assets/path-of-inner-healing-cover.png";
 import pathOfIntuitionCover from "@/assets/path-of-intuition-cover.png";
@@ -31,13 +30,7 @@ const PathsPreviewSection = () => {
   return (
     <section className="lattice-section bg-background">
       <div className="lattice-container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Choose Your Path
           </h2>
@@ -45,16 +38,12 @@ const PathsPreviewSection = () => {
           <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Each Path is a complete journey—a narrative arc designed to support a specific kind of inner change.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {paths.map((path, index) => (
-            <motion.div
+          {paths.map((path) => (
+            <div
               key={path.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
               <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
@@ -86,7 +75,7 @@ const PathsPreviewSection = () => {
                   {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

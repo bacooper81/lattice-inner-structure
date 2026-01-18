@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import pathImage from "@/assets/path-journey.jpg";
 
@@ -26,13 +25,7 @@ const HowItWorksSection = () => {
       <div className="lattice-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden shadow-lattice">
               <img
                 src={pathImage}
@@ -43,27 +36,18 @@ const HowItWorksSection = () => {
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#f5f0f8]/50 rounded-2xl -z-10" />
             <div className="absolute -top-6 -left-6 w-16 h-16 bg-lattice-warm rounded-xl -z-10" />
-          </motion.div>
+          </div>
 
           {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">
               10 Minutes to Real Results
             </h2>
 
             <div className="space-y-8">
-              {steps.map((step, index) => (
-                <motion.div
+              {steps.map((step) => (
+                <div
                   key={step.number}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex gap-6"
                 >
                   <span className="font-serif text-3xl font-semibold text-[#9e6878]">
@@ -77,11 +61,11 @@ const HowItWorksSection = () => {
                       {step.description}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

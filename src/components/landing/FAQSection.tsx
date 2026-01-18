@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
@@ -8,6 +6,10 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
+  {
+    question: "How much content is available right now?",
+    answer: "Lattice currently includes the complete 12-session Path of Grounding. New Paths are added over time, and members automatically receive access as they're released.",
+  },
   {
     question: "Do I need to own crystals to use Lattice?",
     answer: "No. Crystals are always optional. Each session works through guided imagery, so you can experience the practice fully with or without a physical stone.",
@@ -38,13 +40,7 @@ const FAQSection = () => {
   return (
     <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Common Questions
           </h2>
@@ -52,15 +48,9 @@ const FAQSection = () => {
           <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about your journey with Lattice
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-3xl mx-auto"
-        >
+        <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
@@ -77,7 +67,7 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </motion.div>
+        </div>
 
       </div>
     </section>
