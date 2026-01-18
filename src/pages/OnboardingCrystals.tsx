@@ -14,8 +14,8 @@ const OnboardingCrystals = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center max-w-md mx-auto"
       >
-        {/* Progress Dots */}
-        <div className="flex justify-center gap-2 mb-12">
+        {/* Progress Dots - fixed width container */}
+        <div className="flex justify-center gap-2 mb-12 w-12 mx-auto">
           <div className="w-2 h-2 rounded-full border border-[#6d5a7d]/40" />
           <div className="w-2 h-2 rounded-full bg-[#6d5a7d]" />
         </div>

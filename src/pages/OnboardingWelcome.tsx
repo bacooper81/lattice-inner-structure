@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import heroImage from "@/assets/hero-crystal-lattice.jpg";
 
 const OnboardingWelcome = () => {
   const navigate = useNavigate();
@@ -13,11 +14,21 @@ const OnboardingWelcome = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center max-w-md mx-auto"
       >
-        {/* Progress Dots */}
-        <div className="flex justify-center gap-2 mb-12">
+        {/* Progress Dots - fixed width container */}
+        <div className="flex justify-center gap-2 mb-12 w-12 mx-auto">
           <div className="w-2 h-2 rounded-full bg-[#6d5a7d]" />
           <div className="w-2 h-2 rounded-full border border-[#6d5a7d]/40" />
         </div>
+
+        {/* Hero Image */}
+        <motion.img
+          src={heroImage}
+          alt="Crystal meditation visualization"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="w-32 h-32 object-cover rounded-full mx-auto mb-8 shadow-lg"
+        />
 
         <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#4a3d5c] mb-8">
           Welcome to Lattice
