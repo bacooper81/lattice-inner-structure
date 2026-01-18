@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import pathOfGroundingImage from "@/assets/path-of-grounding.png";
 
 const testimonials = [
   {
@@ -21,21 +22,17 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm relative overflow-hidden">
-      {/* Subtle geometric pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <pattern id="testimonial-pattern" x="0" y="0" width="15" height="15" patternUnits="userSpaceOnUse">
-            <path d="M0 7.5 L7.5 0 L15 7.5 L7.5 15 Z" fill="none" stroke="currentColor" strokeWidth="0.3" />
-          </pattern>
-          <rect width="100" height="100" fill="url(#testimonial-pattern)" />
-        </svg>
-      </div>
-      {/* Edge fade vignette overlay - inverted to show texture only at edges */}
+    <section className="lattice-section relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${pathOfGroundingImage})` }}
+      />
+      {/* Mist fade overlay - fades edges into white */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at center, rgba(248,246,250,1) 20%, rgba(248,246,250,0.6) 50%, transparent 80%)'
+          background: 'radial-gradient(ellipse at center, transparent 10%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.85) 65%, rgba(255,255,255,1) 80%)'
         }}
       />
 
