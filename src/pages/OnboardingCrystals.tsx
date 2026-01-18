@@ -25,7 +25,7 @@ const OnboardingCrystals = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="w-36 h-36 rounded-full mx-auto mb-8 bg-gradient-to-br from-[#e8f0f8] to-[#b8d4e8] flex items-center justify-center shadow-lg"
+          className="w-36 h-36 rounded-full mx-auto mb-8 bg-gradient-to-br from-[#e8e0f0] to-[#d8cce8] flex items-center justify-center shadow-lg"
         >
           <img
             src={blueLaceAgate}
