@@ -55,49 +55,53 @@ const PathsPreviewSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1">
-                {/* Cover image or decorative pattern */}
-                <div className="h-40 rounded-xl mb-6 relative overflow-hidden">
-                  {index === 0 ? (
-                    <>
-                      <img 
-                        src={pathOfGroundingCover} 
-                        alt="Path of Grounding" 
-                        className="w-full h-full object-cover"
-                      />
-                      {/* White mist fade around edges */}
-                      <div 
-                        className="absolute inset-0 pointer-events-none"
-                        style={{
-                          background: `
-                            radial-gradient(ellipse at center, transparent 30%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.85) 85%, rgba(255,255,255,1) 100%)
-                          `
-                        }}
-                      />
-                    </>
-                  ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4]">
-                      <div className="absolute inset-0 opacity-20">
-                        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                            <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-[#9e6878]" />
-                          </pattern>
-                          <rect width="100" height="100" fill={`url(#lattice-${index})`} />
-                        </svg>
-                      </div>
-                    </div>
-                  )}
-                </div>
+              <div className="lattice-card h-full flex flex-col hover:shadow-lattice-hover transition-all duration-300 group-hover:-translate-y-1 relative overflow-hidden">
+                {/* Full card background image for Path of Grounding */}
+                {index === 0 && (
+                  <>
+                    <img 
+                      src={pathOfGroundingCover} 
+                      alt="" 
+                      className="absolute inset-0 w-full h-full object-cover object-top"
+                    />
+                    {/* Strong white mist fade around edges */}
+                    <div 
+                      className="absolute inset-0 pointer-events-none"
+                      style={{
+                        background: `
+                          radial-gradient(ellipse 70% 60% at center, transparent 10%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0.9) 65%, rgba(255,255,255,1) 80%)
+                        `
+                      }}
+                    />
+                  </>
+                )}
 
-                <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-3">
-                  {path.title}
-                </h3>
-                <p className="text-[#5f5278] text-lg leading-relaxed flex-1">
-                  {path.description}
-                </p>
-                <p className="text-sm text-[#7a6889] mt-4 uppercase tracking-wider">
-                  {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
-                </p>
+                {/* Decorative pattern for other cards */}
+                {index !== 0 && (
+                  <div className="h-40 rounded-xl mb-6 relative overflow-hidden bg-gradient-to-br from-[#f8f5fa] to-[#f0e8f4]">
+                    <div className="absolute inset-0 opacity-20">
+                      <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <pattern id={`lattice-${index}`} x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                          <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-[#9e6878]" />
+                        </pattern>
+                        <rect width="100" height="100" fill={`url(#lattice-${index})`} />
+                      </svg>
+                    </div>
+                  </div>
+                )}
+
+                <div className="relative z-10 flex flex-col flex-1">
+                  {index === 0 && <div className="h-32" />}
+                  <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-3">
+                    {path.title}
+                  </h3>
+                  <p className="text-[#5f5278] text-lg leading-relaxed flex-1">
+                    {path.description}
+                  </p>
+                  <p className="text-sm text-[#7a6889] mt-4 uppercase tracking-wider">
+                    {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}
