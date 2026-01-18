@@ -45,9 +45,6 @@ const FAQSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-lg mb-4">
-            FAQ
-          </p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Common Questions
           </h2>
