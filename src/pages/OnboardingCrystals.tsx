@@ -21,14 +21,18 @@ const OnboardingCrystals = () => {
         </div>
 
         {/* Crystal Image */}
-        <motion.img
-          src={blueLaceAgate}
-          alt="Blue Lace Agate crystal"
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="w-32 h-32 object-contain mx-auto mb-8 drop-shadow-lg"
-        />
+          className="w-36 h-36 rounded-full mx-auto mb-8 bg-gradient-to-br from-[#e8e0f0] to-[#d8cce8] flex items-center justify-center shadow-lg"
+        >
+          <img
+            src={blueLaceAgate}
+            alt="Blue Lace Agate crystal"
+            className="w-28 h-28 object-contain"
+          />
+        </motion.div>
 
         <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#4a3d5c] mb-8">
           Crystals are always optional
