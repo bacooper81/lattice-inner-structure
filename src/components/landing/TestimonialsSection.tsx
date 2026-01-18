@@ -31,11 +31,11 @@ const TestimonialsSection = () => {
           <rect width="100" height="100" fill="url(#testimonial-pattern)" />
         </svg>
       </div>
-      {/* Edge fade vignette overlay */}
+      {/* Edge fade vignette overlay - inverted to show texture only at edges */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at center, transparent 30%, rgba(248,246,250,0.6) 70%, rgba(248,246,250,1) 95%)'
+          background: 'radial-gradient(ellipse at center, rgba(248,246,250,1) 20%, rgba(248,246,250,0.6) 50%, transparent 80%)'
         }}
       />
 
