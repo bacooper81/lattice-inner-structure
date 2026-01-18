@@ -12,9 +12,6 @@ const ResonanceSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <p className="text-[#7a6889] font-serif tracking-widest uppercase text-lg mb-8">
-            The Problem
-          </p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}

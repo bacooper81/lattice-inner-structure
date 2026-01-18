@@ -12,9 +12,6 @@ const CTASection = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <p className="text-white/70 font-serif tracking-widest uppercase text-lg mb-4">
-            Guarantee
-          </p>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-white">
             Try Lattice Risk Free
           </h2>
