@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import blueLaceAgate from "@/assets/blue-lace-agate.png";
 
 const OnboardingCrystals = () => {
   const navigate = useNavigate();
@@ -13,19 +14,33 @@ const OnboardingCrystals = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center max-w-md mx-auto"
       >
+        {/* Progress Dots */}
+        <div className="flex justify-center gap-2 mb-12">
+          <div className="w-2 h-2 rounded-full border border-[#6d5a7d]/40" />
+          <div className="w-2 h-2 rounded-full bg-[#6d5a7d]" />
+        </div>
+
+        {/* Crystal Image */}
+        <motion.img
+          src={blueLaceAgate}
+          alt="Blue Lace Agate crystal"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="w-32 h-32 object-contain mx-auto mb-8 drop-shadow-lg"
+        />
+
         <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#4a3d5c] mb-8">
           Crystals are always optional
         </h1>
         
         <div className="text-lg md:text-xl text-[#5f5278] leading-relaxed mb-12 space-y-6">
           <p>
-            If you have the suggested crystal, you can place it nearby or hold it during the session.
+            Your first session uses <strong className="text-[#4a3d5c]">Blue Lace Agate</strong>.
           </p>
           <p>
-            If you don't, simply listen and follow the guidance.
-          </p>
-          <p className="font-medium">
-            Either approach is fine.
+            If you have the crystal, you can place it nearby or hold it during the session.
+            If not, simply listen and follow the guidance.
           </p>
         </div>
         

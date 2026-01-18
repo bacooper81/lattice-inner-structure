@@ -13,6 +13,12 @@ const OnboardingWelcome = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center max-w-md mx-auto"
       >
+        {/* Progress Dots */}
+        <div className="flex justify-center gap-2 mb-12">
+          <div className="w-2 h-2 rounded-full bg-[#6d5a7d]" />
+          <div className="w-2 h-2 rounded-full border border-[#6d5a7d]/40" />
+        </div>
+
         <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#4a3d5c] mb-8">
           Welcome to Lattice
         </h1>
