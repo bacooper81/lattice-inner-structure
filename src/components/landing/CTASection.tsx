@@ -23,7 +23,7 @@ const CTASection = () => {
           </p>
           <Button 
             size="xl" 
-            className="bg-white text-[#3a3642] hover:bg-white/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-[#e8b4bc] text-[#3a3642] hover:bg-[#d9a0a9] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start My Journey
           </Button>
