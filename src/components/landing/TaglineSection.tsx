@@ -11,7 +11,7 @@ const TaglineSection = () => {
           transition={{ duration: 0.6 }}
           className="font-serif text-xl md:text-2xl lg:text-3xl text-white/90 text-center max-w-3xl mx-auto leading-relaxed"
         >
-          Each 10-minute session helps you embody new ways of being that create <span className="text-[#f5d5d9] font-bold">real results</span> — not just good vibes.
+          Each 10-minute session helps you embody new ways of being that create real results — not just good vibes.
         </motion.p>
       </div>
     </section>
