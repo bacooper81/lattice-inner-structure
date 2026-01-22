@@ -41,11 +41,11 @@ const FAQSection = () => {
     <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-lattice-purple-dark leading-tight mb-6">
             Common Questions
           </h2>
-          <div className="lattice-divider mx-auto mb-6" />
-          <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <div className="w-12 h-px bg-gradient-to-r from-transparent via-lattice-gold to-transparent mx-auto mb-6" />
+          <p className="text-lattice-slate-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about your journey with Lattice
           </p>
         </div>
@@ -58,10 +58,10 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-card border border-border/50 rounded-xl px-6 data-[state=open]:shadow-lattice transition-all"
               >
-                <AccordionTrigger className="text-left font-serif text-lg text-[#4a3d5c] hover:text-[#6d5a7d] transition-colors py-5">
+                <AccordionTrigger className="text-left font-serif text-lg text-lattice-purple-dark hover:text-lattice-purple transition-colors py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-[#5f5278] text-lg leading-relaxed pb-5">
+                <AccordionContent className="text-lattice-slate-light text-lg leading-relaxed pb-5">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

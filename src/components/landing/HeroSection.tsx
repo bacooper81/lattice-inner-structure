@@ -31,12 +31,12 @@ const HeroSection = () => {
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
 
         <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
-          <span className="text-[#4a3d5c]">You Feel Your Crystals' Energy —</span>
+          <span className="text-lattice-purple-dark">You Feel Your Crystals' Energy —</span>
           <br />
-          <span className="text-[#9e6878]">But Where's the Real Change?</span>
+          <span className="text-lattice-magenta">But Where's the Real Change?</span>
         </h1>
 
-        <p className="text-lg md:text-xl lg:text-2xl text-[#5f5278] max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
+        <p className="text-lg md:text-xl lg:text-2xl text-lattice-slate-light max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
           Join Lattice, a Crystal Meditation App That Builds Inner Structure You Can Rely on When it Matters.
         </p>
         
@@ -44,7 +44,7 @@ const HeroSection = () => {
           <Button 
             size="xl" 
             onClick={() => navigate("/onboarding/welcome")}
-            className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-lattice-purple text-white hover:bg-lattice-purple-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start My Journey
           </Button>

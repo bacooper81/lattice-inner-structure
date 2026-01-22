@@ -11,21 +11,21 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           className="flex flex-col md:flex-row items-center justify-between gap-6"
         >
-          <p className="lattice-logo text-[#4a3d5c] text-sm">Lattice</p>
+          <p className="lattice-logo text-lattice-purple-dark text-sm">Lattice</p>
           
           <nav className="flex gap-8">
-            <a href="#" className="text-[#5f5278] hover:text-[#4a3d5c] transition-colors text-sm">
+            <a href="#" className="text-lattice-slate-light hover:text-lattice-purple-dark transition-colors text-sm">
               About
             </a>
-            <a href="#" className="text-[#5f5278] hover:text-[#4a3d5c] transition-colors text-sm">
+            <a href="#" className="text-lattice-slate-light hover:text-lattice-purple-dark transition-colors text-sm">
               Paths
             </a>
-            <a href="#" className="text-[#5f5278] hover:text-[#4a3d5c] transition-colors text-sm">
+            <a href="#" className="text-lattice-slate-light hover:text-lattice-purple-dark transition-colors text-sm">
               Contact
             </a>
           </nav>
 
-          <p className="text-[#7a6889] text-sm">
+          <p className="text-lattice-slate-light text-sm">
             © 2026 Lattice. All rights reserved.
           </p>
         </motion.div>

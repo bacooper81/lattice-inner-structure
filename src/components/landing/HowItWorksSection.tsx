@@ -34,13 +34,13 @@ const HowItWorksSection = () => {
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#f5f0f8]/50 rounded-2xl -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-lattice-purple/10 to-lattice-magenta/10 rounded-2xl -z-10" />
             <div className="absolute -top-6 -left-6 w-16 h-16 bg-lattice-warm rounded-xl -z-10" />
           </div>
 
           {/* Content */}
           <div>
-            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-8">
+            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-lattice-purple-dark leading-tight mb-8">
               10 Minutes to Real Results
             </h2>
 
@@ -50,14 +50,14 @@ const HowItWorksSection = () => {
                   key={step.number}
                   className="flex gap-6"
                 >
-                  <span className="font-serif text-3xl font-semibold text-[#9e6878]">
+                  <span className="font-serif text-3xl font-semibold text-lattice-magenta">
                     {step.number}
                   </span>
                   <div>
-                    <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-2">
+                    <h3 className="font-serif text-xl md:text-2xl font-semibold text-lattice-purple-dark mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-[#5f5278] text-lg leading-relaxed">
+                    <p className="text-lattice-slate-light text-lg leading-relaxed">
                       {step.description}
                     </p>
                   </div>
