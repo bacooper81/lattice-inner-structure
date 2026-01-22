@@ -2,8 +2,8 @@ const TaglineSection = () => {
   return (
     <section className="py-16 md:py-24 bg-[#3a3642] px-6 md:px-12 relative overflow-hidden">
       {/* Decorative blurred orbs */}
-      <div className="absolute top-1/4 -left-20 w-64 h-64 bg-[#6b5a7a]/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-16 w-48 h-48 bg-[#a88a9a]/15 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-72 h-72 bg-[#6b5a7a]/30 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#a88a9a]/25 rounded-full blur-3xl" />
       
       <div className="lattice-container relative z-10">
         <p className="font-serif text-xl md:text-2xl lg:text-3xl text-white/90 text-center max-w-3xl mx-auto leading-relaxed">

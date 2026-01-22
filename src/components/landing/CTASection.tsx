@@ -7,9 +7,9 @@ const CTASection = () => {
   return (
     <section className="lattice-section bg-[#3a3642] relative overflow-hidden">
       {/* Decorative blurred orbs */}
-      <div className="absolute top-1/3 -left-24 w-72 h-72 bg-[#6b5a7a]/20 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 -right-20 w-56 h-56 bg-[#a88a9a]/15 rounded-full blur-3xl" />
-      <div className="absolute -bottom-16 left-1/3 w-48 h-48 bg-[#8a7090]/12 rounded-full blur-3xl" />
+      <div className="absolute -top-20 left-1/3 w-80 h-80 bg-[#6b5a7a]/30 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-[#a88a9a]/25 rounded-full blur-3xl" />
+      <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-72 h-72 bg-[#8a7090]/20 rounded-full blur-3xl" />
       
       <div className="lattice-container relative z-10">
         <div className="text-center max-w-2xl mx-auto">
