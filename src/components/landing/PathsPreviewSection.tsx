@@ -31,11 +31,11 @@ const PathsPreviewSection = () => {
     <section className="lattice-section bg-background">
       <div className="lattice-container">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-lattice-purple-dark leading-tight mb-6">
             Choose Your Path
           </h2>
-          <div className="lattice-divider mx-auto mb-6" />
-          <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <div className="w-12 h-px bg-gradient-to-r from-transparent via-lattice-gold to-transparent mx-auto mb-6" />
+          <p className="text-lattice-slate-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Each Path is a complete journey—a narrative arc designed to support a specific kind of inner change.
           </p>
         </div>
@@ -65,13 +65,13 @@ const PathsPreviewSection = () => {
                   />
                 </div>
 
-                <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-3">
+                <h3 className="font-serif text-xl md:text-2xl font-semibold text-lattice-purple-dark mb-3">
                   {path.title}
                 </h3>
-                <p className="text-[#5f5278] text-lg leading-relaxed flex-1">
+                <p className="text-lattice-slate-light text-lg leading-relaxed flex-1">
                   {path.description}
                 </p>
-                <p className="text-sm text-[#7a6889] mt-4 uppercase tracking-wider">
+                <p className="text-sm text-lattice-purple mt-4 uppercase tracking-wider">
                   {path.status === "available" ? `${path.sessions} Sessions` : "Coming Soon"}
                 </p>
               </div>

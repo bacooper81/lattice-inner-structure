@@ -17,16 +17,16 @@ const ClosingSection = () => {
 
       <div className="lattice-container relative z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="lattice-logo text-xl mb-6 text-[#7a6889]">Lattice</p>
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
+          <p className="lattice-logo text-xl mb-6 text-lattice-purple">Lattice</p>
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-lattice-purple-dark">
             Begin Your First Session
           </h2>
-          <p className="text-xl md:text-2xl text-[#5f5278] mb-10 leading-relaxed">
+          <p className="text-xl md:text-2xl text-lattice-slate-light mb-10 leading-relaxed">
             Eight minutes. No crystals required.
           </p>
           <Button 
             size="xl" 
-            className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-lattice-purple text-white hover:bg-lattice-purple-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start My Journey
           </Button>

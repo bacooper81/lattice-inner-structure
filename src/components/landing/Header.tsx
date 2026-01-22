@@ -45,13 +45,13 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-6">
             <Link
               to="/login"
-              className="text-[#6d5a7d] hover:text-[#5c4a6a] font-medium transition-colors"
+              className="text-lattice-purple hover:text-lattice-purple-dark font-medium transition-colors"
             >
               Sign In
             </Link>
             <Button 
               size="sm" 
-              className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] font-serif tracking-wider uppercase text-xs"
+              className="bg-lattice-purple text-white hover:bg-lattice-purple-dark font-serif tracking-wider uppercase text-xs"
             >
               Get Started
             </Button>
@@ -59,7 +59,7 @@ const Header = () => {
 
           {/* Mobile Hamburger */}
           <button
-            className="md:hidden p-2 text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
+            className="md:hidden p-2 text-lattice-purple hover:text-lattice-purple-dark transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -74,28 +74,28 @@ const Header = () => {
           <nav className="flex flex-col items-center gap-6 p-8">
             <Link
               to="/"
-              className="text-xl font-serif text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
+              className="text-xl font-serif text-lattice-purple hover:text-lattice-purple-dark transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/get-started"
-              className="text-xl font-serif text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
+              className="text-xl font-serif text-lattice-purple hover:text-lattice-purple-dark transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Get Started
             </Link>
             <Link
               to="/login"
-              className="text-xl font-serif text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
+              className="text-xl font-serif text-lattice-purple hover:text-lattice-purple-dark transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Log In
             </Link>
             <Link
               to="/support"
-              className="text-xl font-serif text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
+              className="text-xl font-serif text-lattice-purple hover:text-lattice-purple-dark transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Support
