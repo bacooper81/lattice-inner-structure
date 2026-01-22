@@ -1,15 +1,6 @@
 const ResonanceSection = () => {
   return (
     <section className="lattice-section bg-background relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div 
-        className="absolute top-[-10%] right-[-5%] w-[35vw] h-[35vw] rounded-full opacity-25 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(280 20% 85%) 0%, transparent 70%)' }}
-      />
-      <div 
-        className="absolute bottom-[-10%] left-[-8%] w-[40vw] h-[40vw] rounded-full opacity-20 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(350 25% 88%) 0%, transparent 70%)' }}
-      />
 
       <div className="lattice-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">

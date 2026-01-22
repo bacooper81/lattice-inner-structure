@@ -7,26 +7,12 @@ const OnboardingCrystals = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-6 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div 
-        className="absolute top-[-15%] left-[-10%] w-[45vw] h-[45vw] rounded-full opacity-30 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(200 30% 85%) 0%, transparent 70%)' }}
-      />
-      <div 
-        className="absolute bottom-[-20%] right-[-15%] w-[50vw] h-[50vw] rounded-full opacity-25 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(280 20% 85%) 0%, transparent 70%)' }}
-      />
-      <div 
-        className="absolute top-[50%] right-[5%] w-[25vw] h-[25vw] rounded-full opacity-20 blur-2xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(200 25% 88%) 0%, transparent 70%)' }}
-      />
-      
+    <div className="min-h-screen bg-background flex items-center justify-center px-6">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center max-w-md mx-auto relative z-10"
+        className="text-center max-w-md mx-auto"
       >
         {/* Progress Dots - fixed width container */}
         <div className="flex justify-center gap-2 mb-12 w-12 mx-auto">

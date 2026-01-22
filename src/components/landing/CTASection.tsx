@@ -5,18 +5,8 @@ import { useNavigate } from "react-router-dom";
 const CTASection = () => {
   const navigate = useNavigate();
   return (
-    <section className="lattice-section bg-[#3a3642] relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div 
-        className="absolute top-[-15%] left-[10%] w-[40vw] h-[40vw] rounded-full opacity-15 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(280 25% 50%) 0%, transparent 70%)' }}
-      />
-      <div 
-        className="absolute bottom-[-20%] right-[5%] w-[45vw] h-[45vw] rounded-full opacity-12 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(350 30% 55%) 0%, transparent 70%)' }}
-      />
-      
-      <div className="lattice-container relative z-10">
+    <section className="lattice-section bg-[#3a3642]">
+      <div className="lattice-container">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-white">
             Begin with the Path of Grounding

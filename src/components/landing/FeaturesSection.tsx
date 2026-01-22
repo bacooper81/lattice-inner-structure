@@ -24,18 +24,8 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="lattice-section bg-lattice-warm relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div 
-        className="absolute top-[10%] left-[-10%] w-[30vw] h-[30vw] rounded-full opacity-30 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(280 18% 82%) 0%, transparent 70%)' }}
-      />
-      <div 
-        className="absolute bottom-[5%] right-[-8%] w-[35vw] h-[35vw] rounded-full opacity-25 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, hsl(350 22% 85%) 0%, transparent 70%)' }}
-      />
-      
-      <div className="lattice-container relative z-10">
+    <section className="lattice-section bg-lattice-warm">
+      <div className="lattice-container">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Results, Not Just Good Vibes
