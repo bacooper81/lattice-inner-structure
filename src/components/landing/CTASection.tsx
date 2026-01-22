@@ -7,7 +7,7 @@ const CTASection = () => {
   return (
     <section className="lattice-section bg-[#3a3642] relative overflow-hidden">
       {/* Decorative blurred orbs */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#9b7a8a]/40 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#9b7a8a40_100%)]" />
       
       <div className="lattice-container relative z-10">
         <div className="text-center max-w-2xl mx-auto">
