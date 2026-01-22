@@ -68,13 +68,6 @@ export default {
         lattice: {
           cream: "hsl(var(--lattice-cream))",
           warm: "hsl(var(--lattice-warm))",
-          deep: "hsl(var(--lattice-deep))",
-          magenta: "hsl(var(--lattice-magenta))",
-          "magenta-light": "hsl(var(--lattice-magenta-light))",
-          purple: "hsl(var(--lattice-purple))",
-          "purple-dark": "hsl(var(--lattice-purple-dark))",
-          blue: "hsl(var(--lattice-blue))",
-          "blue-light": "hsl(var(--lattice-blue-light))",
           gold: "hsl(var(--lattice-gold))",
           "gold-light": "hsl(var(--lattice-gold-light))",
           slate: "hsl(var(--lattice-slate))",

@@ -34,17 +34,17 @@ const TestimonialsSection = () => {
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at center, hsl(250 15% 97% / 1) 20%, hsl(250 15% 97% / 0.6) 50%, transparent 80%)'
+          background: 'radial-gradient(ellipse at center, rgba(248,246,250,1) 20%, rgba(248,246,250,0.6) 50%, transparent 80%)'
         }}
       />
 
       <div className="lattice-container relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-lattice-purple-dark leading-tight mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             What People Are Experiencing
           </h2>
-          <div className="w-12 h-px bg-gradient-to-r from-transparent via-lattice-gold to-transparent mx-auto mb-6" />
-          <p className="text-lattice-slate-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <div className="lattice-divider mx-auto mb-6" />
+          <p className="text-[#5f5278] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Discover how Lattice has helped others build their inner foundation
           </p>
         </div>
@@ -59,15 +59,15 @@ const TestimonialsSection = () => {
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 fill-lattice-gold text-lattice-gold"
+                    className="w-4 h-4 fill-[#9e6878] text-[#9e6878]"
                   />
                 ))}
               </div>
-              <blockquote className="text-lattice-slate-light text-lg mb-6 leading-relaxed">
+              <blockquote className="text-[#5f5278] text-lg mb-6 leading-relaxed">
                 "{testimonial.content}"
               </blockquote>
               <div className="border-t border-border/50 pt-4">
-                <p className="font-serif text-lattice-purple-dark font-semibold">- {testimonial.name}</p>
+                <p className="font-serif text-[#4a3d5c] font-semibold">- {testimonial.name}</p>
               </div>
             </div>
           ))}

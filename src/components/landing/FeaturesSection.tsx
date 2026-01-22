@@ -27,10 +27,10 @@ const FeaturesSection = () => {
     <section className="lattice-section bg-lattice-warm">
       <div className="lattice-container">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-lattice-purple-dark leading-tight mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-[#4a3d5c] leading-tight mb-6">
             Results, Not Just Good Vibes
           </h2>
-          <div className="w-12 h-px bg-gradient-to-r from-transparent via-lattice-gold to-transparent mx-auto" />
+          <div className="lattice-divider mx-auto" />
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -39,13 +39,13 @@ const FeaturesSection = () => {
               key={feature.title}
               className="lattice-card text-center group hover:shadow-lattice-hover transition-shadow duration-300"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-lattice-purple/10 to-lattice-magenta/10 text-lattice-purple mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#f5f0f8] text-[#7a6889] mb-6 group-hover:scale-110 transition-transform duration-300">
                 <feature.icon className="w-7 h-7" strokeWidth={1.5} />
               </div>
-              <h3 className="font-serif text-xl md:text-2xl font-semibold text-lattice-purple-dark mb-4">
+              <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#4a3d5c] mb-4">
                 {feature.title}
               </h3>
-              <p className="text-lattice-slate-light text-lg leading-relaxed">
+              <p className="text-[#5f5278] text-lg leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -55,7 +55,7 @@ const FeaturesSection = () => {
         <div className="mt-12 flex justify-center">
           <Button 
             size="xl" 
-            className="bg-lattice-purple text-white hover:bg-lattice-purple-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start My Journey
           </Button>

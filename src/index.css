@@ -30,13 +30,13 @@
     --muted: 40 8% 94%;
     --muted-foreground: 270 7% 45%;
 
-    /* Accent - Vibrant purple from crystal reference */
-    --accent: 250 65% 62%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent - Soft dusty purple from hero */
+    --accent: 280 20% 50%;
+    --accent-foreground: 40 20% 98%;
 
-    /* Crystal highlight - vibrant magenta */
-    --crystal: 330 60% 58%;
-    --crystal-foreground: 0 0% 100%;
+    /* Crystalline highlight - soft rose from hero */
+    --crystal: 350 30% 55%;
+    --crystal-foreground: 270 7% 25%;
 
     /* Destructive */
     --destructive: 0 65% 55%;
@@ -59,25 +59,17 @@
     --sidebar-border: 40 12% 90%;
     --sidebar-ring: 280 20% 50%;
 
-    /* Custom Lattice tokens - vibrant crystal palette */
+    /* Custom Lattice tokens - hero color palette */
     --lattice-cream: 40 20% 98%;
-    --lattice-warm: 250 15% 97%;
-    --lattice-deep: 260 35% 35%;
-    
-    /* Vibrant crystal colors from reference image */
-    --lattice-magenta: 330 60% 58%;
-    --lattice-magenta-light: 330 50% 70%;
-    --lattice-purple: 250 65% 62%;
-    --lattice-purple-dark: 250 50% 45%;
-    --lattice-blue: 210 55% 55%;
-    --lattice-blue-light: 210 45% 70%;
-    --lattice-gold: 35 55% 60%;
-    --lattice-gold-light: 35 40% 75%;
-    
-    /* Text colors */
-    --lattice-slate: 250 35% 35%;
-    --lattice-slate-light: 250 20% 50%;
-    --lattice-stone: 250 12% 88%;
+    --lattice-warm: 40 15% 95%;
+    --lattice-deep: 273 20% 30%;
+    --lattice-rose: 350 30% 55%;
+    --lattice-rose-light: 350 25% 70%;
+    --lattice-purple: 280 18% 48%;
+    --lattice-purple-light: 280 15% 55%;
+    --lattice-slate: 270 15% 30%;
+    --lattice-slate-light: 270 12% 45%;
+    --lattice-stone: 40 10% 85%;
   }
 
   .dark {

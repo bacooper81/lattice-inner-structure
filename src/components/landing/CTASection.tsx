@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const CTASection = () => {
   const navigate = useNavigate();
   return (
-    <section className="lattice-section bg-gradient-to-br from-lattice-purple via-lattice-purple-dark to-lattice-blue">
+    <section className="lattice-section bg-[#3a3642]">
       <div className="lattice-container">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-white">
@@ -17,11 +17,11 @@ const CTASection = () => {
           
           <div className="flex flex-col gap-3 items-center mb-8">
             <div className="flex items-center gap-3 text-white/90">
-              <Check className="w-5 h-5 text-lattice-gold-light flex-shrink-0" />
+              <Check className="w-5 h-5 text-[#f5d5d9] flex-shrink-0" />
               <span className="text-lg">Full access to the Path of Grounding</span>
             </div>
             <div className="flex items-center gap-3 text-white/90">
-              <Check className="w-5 h-5 text-lattice-gold-light flex-shrink-0" />
+              <Check className="w-5 h-5 text-[#f5d5d9] flex-shrink-0" />
               <span className="text-lg">Automatic access to all future Paths as they're released</span>
             </div>
           </div>
@@ -33,7 +33,7 @@ const CTASection = () => {
           <Button 
             size="xl" 
             onClick={() => navigate("/onboarding/welcome")}
-            className="bg-lattice-gold text-white hover:bg-lattice-gold-light hover:text-lattice-purple-dark shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
+            className="bg-[#f5d5d9] text-[#3a3642] hover:bg-[#e8c0c5] shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-serif tracking-widest uppercase text-base transition-all"
           >
             Start with the Path of Grounding
           </Button>
