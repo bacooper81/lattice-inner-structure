@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import latticeIcon from "@/assets/lattice-icon.png";
 
 const Footer = () => {
   return (
@@ -11,7 +12,10 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           className="flex flex-col md:flex-row items-center justify-between gap-6"
         >
-          <p className="lattice-logo text-[#4a3d5c] text-sm">Lattice</p>
+          <div className="flex items-center gap-3">
+            <img src={latticeIcon} alt="Lattice" className="h-10 w-10 rounded-lg" />
+            <p className="lattice-logo text-[#4a3d5c] text-sm">Lattice</p>
+          </div>
           
           <nav className="flex gap-8">
             <a href="#" className="text-[#5f5278] hover:text-[#4a3d5c] transition-colors text-sm">
