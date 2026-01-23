@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-crystal-lattice.jpg";
+import latticeIcon from "@/assets/lattice-icon.png";
 
 const ClosingSection = () => {
   return (
@@ -17,7 +19,21 @@ const ClosingSection = () => {
 
       <div className="lattice-container relative z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="lattice-logo text-xl mb-6 text-[#7a6889]">Lattice</p>
+          {/* Prominent brand icon */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-10"
+          >
+            <img
+              src={latticeIcon}
+              alt="Lattice"
+              className="w-28 h-28 md:w-36 md:h-36 mx-auto rounded-2xl shadow-2xl"
+            />
+          </motion.div>
+          
           <h2 className="font-serif text-3xl md:text-5xl font-semibold leading-tight mb-6 text-[#4a3d5c]">
             Begin Your First Session
           </h2>
