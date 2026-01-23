@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import latticeIcon from "@/assets/lattice-icon.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,8 +38,9 @@ const Header = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
           {/* Brand */}
-          <Link to="/" className="lattice-logo text-lg text-foreground/80 hover:text-foreground transition-colors">
-            Lattice
+          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <img src={latticeIcon} alt="Lattice" className="h-8 w-8 rounded-lg" />
+            <span className="lattice-logo text-lg text-foreground/80">Lattice</span>
           </Link>
 
           {/* Desktop Navigation */}
