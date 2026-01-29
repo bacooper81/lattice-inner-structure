@@ -46,6 +46,12 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <Link
+              to="/learn-more"
+              className="text-[#6d5a7d] hover:text-[#5c4a6a] font-medium transition-colors"
+            >
+              Learn More
+            </Link>
+            <Link
               to="/login"
               className="text-[#6d5a7d] hover:text-[#5c4a6a] font-medium transition-colors"
             >
@@ -54,8 +60,9 @@ const Header = () => {
             <Button 
               size="sm" 
               className="bg-[#6d5a7d] text-white hover:bg-[#5c4a6a] font-serif tracking-wider uppercase text-xs"
+              asChild
             >
-              Get Started
+              <Link to="/onboarding/welcome">Get Started</Link>
             </Button>
           </div>
 
@@ -82,7 +89,14 @@ const Header = () => {
               Home
             </Link>
             <Link
-              to="/get-started"
+              to="/learn-more"
+              className="text-xl font-serif text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Learn More
+            </Link>
+            <Link
+              to="/onboarding/welcome"
               className="text-xl font-serif text-[#6d5a7d] hover:text-[#5c4a6a] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
